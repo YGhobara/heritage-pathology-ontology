@@ -73,6 +73,7 @@ ontology/
   pathologies.ttl
   causes.ttl
   observation-examples.ttl
+  heritage-pathology-ontology.ttl
 
 queries/
   q1-list-observations.rq
@@ -89,6 +90,8 @@ queries/
 * `pathologies.ttl`: defines observed pathologies.
 * `causes.ttl`: defines possible causes and their links to pathologies.
 * `observation-examples.ttl`: contains (3) example observation instances.
+* `heritage-pathology-ontology.ttl`: combines all .ttl files into one, to facilitate querying.
+
 
 ## Example SPARQL queries
 
@@ -97,6 +100,26 @@ The `queries/` directory contains example SPARQL queries, including:
 * listing observations;
 * retrieving causes associated with a pathology;
 * retrieving pathologies associated with a function and material.
+
+### Running the queries with Apache Jena
+
+The example queries can be executed with a SPARQL engine such as [Apache Jena](https://jena.apache.org/). Jena includes ARQ, a SPARQL query engine, and provides command-line tools such as `sparql` and `arq`. :contentReference[oaicite:1]{index=1}
+
+Install Java first. Jena 6 requires Java 21 or later.
+
+On Ubuntu/Debian:
+
+```bash
+sudo apt update
+sudo apt install openjdk-21-jdk
+```
+
+Example using Apache Jena ARQ:
+
+```bash
+sparql --data ontology/heritage-pathology-ontology.ttl --query queries/q1-list-observations.rq
+```
+
 
 ## References and methodology
 
