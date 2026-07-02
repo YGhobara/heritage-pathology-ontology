@@ -103,7 +103,7 @@ The `queries/` directory contains example SPARQL queries, including:
 
 ### Running the queries with Apache Jena
 
-The example queries can be executed with a SPARQL engine such as [Apache Jena](https://jena.apache.org/). Jena includes ARQ, a SPARQL query engine, and provides command-line tools such as `sparql` and `arq`. :contentReference[oaicite:1]{index=1}
+The example queries can be executed with a SPARQL engine such as [Apache Jena](https://jena.apache.org/). Jena includes ARQ, a SPARQL query engine, and provides command-line tools such as `sparql` and `arq`.
 
 Install Java first. Jena 6 requires Java 21 or later.
 
