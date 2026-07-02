@@ -1,0 +1,177 @@
+@prefix hpo: <https://example.org/heritage-pathology-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/heritage-pathology-ontology> a owl:Ontology .
+
+#################################################################
+# Classes
+#################################################################
+
+hpo:Observation a owl:Class .
+
+hpo:VisibilityContext a owl:Class ;
+    rdfs:label "Contexte de visibilité"@fr .
+
+hpo:ElementCategory a owl:Class ;
+    rdfs:label "Type d'éléments"@fr .
+
+hpo:ElementFunction a owl:Class ;
+    rdfs:label "Utilité"@fr .
+
+hpo:Component a owl:Class ;
+    rdfs:label "Nom"@fr .
+
+hpo:Material a owl:Class ;
+    rdfs:label "Matériau"@fr .
+
+hpo:Pathology a owl:Class ;
+    rdfs:label "Pathologie"@fr .
+
+hpo:Cause a owl:Class ;
+    rdfs:label "Cause"@fr .
+
+hpo:ClassificationLevel a owl:Class ;
+    rdfs:label "Niveau de classification"@fr .
+
+#################################################################
+# Datatype properties
+#################################################################
+
+hpo:workCompletionDelayYears a owl:DatatypeProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Réalisation des travaux"@fr ;
+    rdfs:comment "Délai de réalisation des travaux, exprimé en années."@fr .
+
+hpo:controlVisitDelayYears a owl:DatatypeProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Visite de contrôle"@fr ;
+    rdfs:comment "Délai avant visite de contrôle, exprimé en années."@fr .
+
+hpo:additionalNotes a owl:DatatypeProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Observations libres"@fr ;
+    rdfs:comment "Notes libres ou remarques complémentaires associées à l'observation."@fr .
+
+hpo:measurableDataText a owl:DatatypeProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Donnée mesurable"@fr .
+
+hpo:remediationText a owl:DatatypeProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Remédiation"@fr .
+
+hpo:attachmentUrl a owl:DatatypeProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "Pièce jointe"@fr .
+
+#################################################################
+# Object properties
+#################################################################
+
+hpo:hasVisibilityContext a owl:ObjectProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range hpo:VisibilityContext ;
+    rdfs:label "où est-ce visible ?"@fr .
+
+hpo:hasElementCategory a owl:ObjectProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range hpo:ElementCategory ;
+    rdfs:label "quel type d'éléments ?"@fr .
+
+hpo:hasMaterial a owl:ObjectProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range hpo:Material ;
+    rdfs:label "matériau"@fr .
+
+hpo:allowedInVisibilityContext a owl:ObjectProperty ;
+    rdfs:domain hpo:ElementCategory ;
+    rdfs:range hpo:VisibilityContext ;
+    rdfs:label "autorisé dans le contexte de visibilité"@fr .
+
+hpo:hasElementFunction a owl:ObjectProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range hpo:ElementFunction ;
+    rdfs:label "utilité"@fr .
+
+hpo:allowedForElementCategory a owl:ObjectProperty ;
+    rdfs:domain hpo:ElementFunction ;
+    rdfs:range hpo:ElementCategory ;
+    rdfs:label "autorisé pour le type d'éléments"@fr .
+
+hpo:allowedForMaterial a owl:ObjectProperty ;
+    rdfs:domain hpo:Component ;
+    rdfs:range hpo:Material ;
+    rdfs:label "autorisé pour le matériau"@fr .
+
+hpo:allowedForElementFunction a owl:ObjectProperty ;
+    rdfs:domain hpo:Material ;
+    rdfs:range hpo:ElementFunction ;
+    rdfs:label "autorisé pour l'utilité"@fr .
+
+hpo:concernsComponent a owl:ObjectProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range hpo:Component ;
+    rdfs:label "nom"@fr .
+
+hpo:hasPathology a owl:ObjectProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range hpo:Pathology ;
+    rdfs:label "pathologie"@fr .
+
+hpo:hasCause a owl:ObjectProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range hpo:Cause ;
+    rdfs:label "cause"@fr .
+
+# Classifications
+
+hpo:hasStructureClassification a owl:ObjectProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range hpo:ClassificationLevel ;
+    rdfs:label "Structure"@fr .
+
+hpo:hasUserClassification a owl:ObjectProperty ;
+    rdfs:domain hpo:Observation ;
+    rdfs:range hpo:ClassificationLevel ;
+    rdfs:label "Usagers"@fr .
+
+# Component constraint properties
+
+hpo:componentAllowedForElementFunction a owl:ObjectProperty ;
+    rdfs:domain hpo:Component ;
+    rdfs:range hpo:ElementFunction ;
+    rdfs:label "composant autorisé pour l'utilité"@fr .
+
+hpo:componentAllowedForMaterial a owl:ObjectProperty ;
+    rdfs:domain hpo:Component ;
+    rdfs:range hpo:Material ;
+    rdfs:label "composant autorisé pour le matériau"@fr .
+
+# Pathology constraint properties
+
+hpo:pathologyAllowedForElementFunction a owl:ObjectProperty ;
+    rdfs:domain hpo:Pathology ;
+    rdfs:range hpo:ElementFunction ;
+    rdfs:label "pathologie autorisée pour l'utilité"@fr .
+
+hpo:pathologyAllowedForMaterial a owl:ObjectProperty ;
+    rdfs:domain hpo:Pathology ;
+    rdfs:range hpo:Material ;
+    rdfs:label "pathologie autorisée pour le matériau"@fr .
+
+
+# Cause constraint properties
+
+hpo:causeAllowedForPathology a owl:ObjectProperty ;
+    rdfs:domain hpo:Cause ;
+    rdfs:range hpo:Pathology ;
+    rdfs:label "cause autorisée pour la pathologie"@fr .

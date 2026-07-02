@@ -1,0 +1,1308 @@
+@prefix hpo: <https://example.org/heritage-pathology-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Causes allowed for Toiture > Charpente > ElementStructurelCharpente > Bois > Fleche
+#################################################################
+
+hpo:SurchargeSimple a hpo:Cause ;
+    rdfs:label "Surcharge simple"@fr ;
+    hpo:causeAllowedForPathology hpo:Fleche .
+
+hpo:SurchargeAlterationProprietesBois a hpo:Cause ;
+    rdfs:label "Surcharge suite à l'altération des propriétés du bois"@fr ;
+    hpo:causeAllowedForPathology hpo:Fleche .
+
+hpo:MauvaiseConceptionGeometrique a hpo:Cause ;
+    rdfs:label "Mauvaise conception géométrique"@fr ;
+    hpo:causeAllowedForPathology hpo:Fleche .
+
+hpo:MauvaiseConceptionDimensionnementElements a hpo:Cause ;
+    rdfs:label "Mauvaise conception dimensionnement des éléments"@fr ;
+    hpo:causeAllowedForPathology hpo:Fleche .
+
+hpo:MauvaiseConceptionQuantitatif a hpo:Cause ;
+    rdfs:label "Mauvaise conception quantitatif"@fr ;
+    hpo:causeAllowedForPathology hpo:Fleche .
+
+hpo:MauvaisChoixEssence a hpo:Cause ;
+    rdfs:label "Mauvais choix d'essence"@fr ;
+    hpo:causeAllowedForPathology hpo:Fleche .
+
+#################################################################
+# Causes allowed for Toiture > Charpente > ElementStructurelCharpente > Bois > Fendue/Casse
+#################################################################
+
+hpo:SurchargeSimple
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:SurchargeAlterationProprietesBois
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:MauvaiseConceptionGeometrique
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:MauvaiseConceptionDimensionnementElements
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:MauvaiseConceptionQuantitatif
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:MauvaisChoixEssence
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+#################################################################
+# Causes allowed for Toiture > Charpente > ElementStructurelCharpente > Bois
+# > DeteriorationDesMateriaux
+#################################################################
+
+hpo:Infiltration a hpo:Cause ;
+    rdfs:label "Infiltration"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:Ventilation a hpo:Cause ;
+    rdfs:label "Ventilation"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:Brule a hpo:Cause ;
+    rdfs:label "Brûlé"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+
+#################################################################
+# Causes allowed for Toiture > Charpente > ElementStructurelCharpente > Bois
+# > Effondrement
+#################################################################
+
+hpo:Surcharge a hpo:Cause ;
+    rdfs:label "Surcharge"@fr ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:ProblemeDePenteSimple a hpo:Cause ;
+    rdfs:label "Problème de pente simple"@fr ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:SurchargeAlterationProprietesBois
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+
+#################################################################
+# Causes allowed for Toiture > Charpente > ElementStructurelCharpente > Bois
+# > Deformation/Mouvements
+#################################################################
+
+hpo:SurchargeSimple
+    hpo:causeAllowedForPathology hpo:Deformation ;
+    hpo:causeAllowedForPathology hpo:Mouvements .
+
+hpo:SurchargeAlterationProprietesBois
+    hpo:causeAllowedForPathology hpo:Deformation ;
+    hpo:causeAllowedForPathology hpo:Mouvements .
+
+hpo:MauvaiseConceptionGeometrique
+    hpo:causeAllowedForPathology hpo:Deformation ;
+    hpo:causeAllowedForPathology hpo:Mouvements .
+
+hpo:MauvaiseConceptionDimensionnementElements
+    hpo:causeAllowedForPathology hpo:Deformation ;
+    hpo:causeAllowedForPathology hpo:Mouvements .
+
+hpo:MauvaiseConceptionQuantitatif
+    hpo:causeAllowedForPathology hpo:Deformation ;
+    hpo:causeAllowedForPathology hpo:Mouvements .
+
+hpo:MauvaisChoixEssence
+    hpo:causeAllowedForPathology hpo:Deformation ;
+    hpo:causeAllowedForPathology hpo:Mouvements .
+
+#################################################################
+# Causes allowed for Toiture > Charpente > ElementStructurelCharpente
+# > Acier/Fer > Deformation
+#################################################################
+
+hpo:Surcharge
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:Dilatation a hpo:Cause ;
+    rdfs:label "Dilatation"@fr ;
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:Incendie a hpo:Cause ;
+    rdfs:label "Incendie"@fr ;
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaiseConceptionGeometrique
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaiseConceptionDimensionnementElements
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaiseConceptionQuantitatif
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaisChoixEssence
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+
+#################################################################
+# Causes allowed for Toiture > Charpente > ElementStructurelCharpente
+# > Acier/Fer > DeteriorationDesMateriaux
+#################################################################
+
+hpo:CorrosionMauvaiseQualiteTraitement a hpo:Cause ;
+    rdfs:label "Corrosion : Mauvaise qualité/traitement"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:CorrosionInfiltrations a hpo:Cause ;
+    rdfs:label "Corrosion : infiltrations"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:CorrosionVentilation a hpo:Cause ;
+    rdfs:label "Corrosion : Ventilation"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:IncompatibiliteDesMateriaux a hpo:Cause ;
+    rdfs:label "Incompatibilité des matériaux"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:AttaqueBiologiqueDejections a hpo:Cause ;
+    rdfs:label "Attaque biologique : déjections"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:MouvementsCause a hpo:Cause ;
+    rdfs:label "Mouvements"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:Accident a hpo:Cause ;
+    rdfs:label "Accident"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+
+#################################################################
+# Causes allowed for Toiture > Charpente > ElementStructurelCharpente
+# > Acier/Fer > Effondrement
+#################################################################
+
+hpo:Surcharge
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:ProblemeDePenteSimple
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:ProblemeDePenteAggravationEPMalEntretenus a hpo:Cause ;
+    rdfs:label "Problème de pente avec aggravation des EP mal entretenus"@fr ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:ProblemeDePenteAggravationEPMalDimensionnes a hpo:Cause ;
+    rdfs:label "Problème de pente avec aggravation des EP mal dimensionnés"@fr ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+#################################################################
+# Causes allowed for Toiture > Charpente > PieceDeFixationCharpente
+# > Bois/Acier/Fer > VariationDeForme
+#################################################################
+
+hpo:SurchargePonctuelle a hpo:Cause ;
+    rdfs:label "Surcharge ponctuelle"@fr ;
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:SurchargePerteProprietesMateriaux a hpo:Cause ;
+    rdfs:label "Surcharge avec perte de propriété des matériaux"@fr ;
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:Dilatation
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:MauvaiseConceptionGeometrique
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:MauvaiseConceptionDimensionnementElements
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:MauvaiseConceptionQuantitatif
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:MauvaiseConceptionQualiteMateriaux a hpo:Cause ;
+    rdfs:label "Mauvaise conception qualité des matériaux"@fr ;
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+#################################################################
+# Causes allowed for Toiture > Charpente > PieceDeFixationCharpente
+# > Bois/Acier/Fer > DeteriorationDesMateriaux
+#################################################################
+
+hpo:MauvaiseQualiteTraitement a hpo:Cause ;
+    rdfs:label "Mauvaise qualité/traitement"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:Infiltrations a hpo:Cause ;
+    rdfs:label "Infiltrations"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:Ventilation
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:AttaqueBiologiqueNuisibles a hpo:Cause ;
+    rdfs:label "Attaque biologique : nuisibles"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:AttaqueBiologiqueVegetaux a hpo:Cause ;
+    rdfs:label "Attaque biologique : végétaux"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementCouvrant
+# > Acier/Fer/Plastique/Amiante > Percements
+#################################################################
+
+hpo:RemaniementDeLaToiture a hpo:Cause ;
+    rdfs:label "Remaniement de la toiture"@fr ;
+    hpo:causeAllowedForPathology hpo:Percements .
+
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementCouvrant
+# > Acier/Fer/Plastique/Amiante > DeteriorationDesMateriaux
+#################################################################
+
+hpo:CorrosionMauvaiseQualiteTraitement
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:CorrosionInfiltrations
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:CorrosionVentilation
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:AttaqueBiologiqueDejections
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementCouvrant
+# > Acier/Fer/Plastique/Amiante > Fleche/Effondrement
+#################################################################
+
+hpo:Surcharge
+    hpo:causeAllowedForPathology hpo:Fleche ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:ProblemeDePenteSimple
+    hpo:causeAllowedForPathology hpo:Fleche ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:ProblemeDePenteAggravationEPMalEntretenus
+    hpo:causeAllowedForPathology hpo:Fleche ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:ProblemeDePenteAggravationEPMalDimensionnes
+    hpo:causeAllowedForPathology hpo:Fleche ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementCouvrant
+# > Bois > AttaqueBiologique
+#################################################################
+
+hpo:MauvaiseVentilation a hpo:Cause ;
+    rdfs:label "Mauvaise ventilation"@fr ;
+    hpo:causeAllowedForPathology hpo:AttaqueBiologique .
+
+hpo:Infiltrations
+    hpo:causeAllowedForPathology hpo:AttaqueBiologique .
+
+hpo:MauvaisTraitementDesBois a hpo:Cause ;
+    rdfs:label "Mauvais traitement des bois"@fr ;
+    hpo:causeAllowedForPathology hpo:AttaqueBiologique .
+
+hpo:PresenceDeNuisibles a hpo:Cause ;
+    rdfs:label "Présence de nuisibles"@fr ;
+    hpo:causeAllowedForPathology hpo:AttaqueBiologique .
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementCouvrant
+# > TerreCuite > Delitee/Poreuse
+#################################################################
+
+hpo:EffetGelAggraveMauvaiseVentilation a hpo:Cause ;
+    rdfs:label "Effet du gel qui peut être aggravé par une mauvaise ventilation"@fr ;
+    hpo:causeAllowedForPathology hpo:Delitee ;
+    hpo:causeAllowedForPathology hpo:Poreuse .
+
+hpo:MauvaiseQualiteTuile a hpo:Cause ;
+    rdfs:label "Mauvaise qualité de tuile"@fr ;
+    hpo:causeAllowedForPathology hpo:Delitee ;
+    hpo:causeAllowedForPathology hpo:Poreuse .
+
+hpo:Vetuste a hpo:Cause ;
+    rdfs:label "Vétusté"@fr ;
+    hpo:causeAllowedForPathology hpo:Delitee ;
+    hpo:causeAllowedForPathology hpo:Poreuse .
+
+hpo:AttaquesBiologiques a hpo:Cause ;
+    rdfs:label "Attaques biologiques"@fr ;
+    hpo:causeAllowedForPathology hpo:Delitee ;
+    hpo:causeAllowedForPathology hpo:Poreuse .
+
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementCouvrant
+# > TerreCuite > Fendue/Casse
+#################################################################
+
+hpo:EffetGelAggraveMauvaiseVentilation
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:MauvaiseQualiteTuile
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:Vetuste
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:AttaquesBiologiques
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:SurchargePonctuelle
+    hpo:causeAllowedForPathology hpo:Fendue ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementCouvrant
+# > TerreCuite > Manquante/Deplacee
+#################################################################
+
+hpo:MauvaisePente a hpo:Cause ;
+    rdfs:label "Mauvaise pente"@fr ;
+    hpo:causeAllowedForPathology hpo:Manquante ;
+    hpo:causeAllowedForPathology hpo:Deplacee .
+
+hpo:DefautDeFixation a hpo:Cause ;
+    rdfs:label "Défaut de fixation"@fr ;
+    hpo:causeAllowedForPathology hpo:Manquante ;
+    hpo:causeAllowedForPathology hpo:Deplacee .
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementDeFixationCouverture
+# > Acier/Fer > VariationDeForme
+#################################################################
+
+hpo:Surcharge
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:Dilatation
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:Incendie
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementDeFixationCouverture
+# > Bois > MortierOuColleDeteriore
+#################################################################
+
+hpo:AttaqueBiologiqueVegetaux
+    hpo:causeAllowedForPathology hpo:MortierOuColleDeteriore .
+
+hpo:AttaqueBiologiqueDejections
+    hpo:causeAllowedForPathology hpo:MortierOuColleDeteriore .
+
+hpo:CompatibiliteDesMateriaux a hpo:Cause ;
+    rdfs:label "Compatibilité des matériaux"@fr ;
+    hpo:causeAllowedForPathology hpo:MortierOuColleDeteriore .
+
+hpo:Vetuste
+    hpo:causeAllowedForPathology hpo:MortierOuColleDeteriore .
+
+hpo:Exposition a hpo:Cause ;
+    rdfs:label "Exposition"@fr ;
+    hpo:causeAllowedForPathology hpo:MortierOuColleDeteriore .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:MortierOuColleDeteriore .
+
+#################################################################
+# Causes allowed for Toiture > Couverture > ElementDeFixationCouverture
+# > Bois > LiteauxAttaqueBiologique
+#################################################################
+
+hpo:MauvaiseVentilation
+    hpo:causeAllowedForPathology hpo:LiteauxAttaqueBiologique .
+
+hpo:Infiltrations
+    hpo:causeAllowedForPathology hpo:LiteauxAttaqueBiologique .
+
+hpo:MauvaisTraitementDesBois
+    hpo:causeAllowedForPathology hpo:LiteauxAttaqueBiologique .
+
+hpo:PresenceDeNuisibles
+    hpo:causeAllowedForPathology hpo:LiteauxAttaqueBiologique .
+
+#################################################################
+# Causes allowed for Toiture > Zinguerie > ElementDeFixationZinguerie
+# > Zinc/Cuivre/PVC/Plomb/Fonte/Metal > VariationDeForme
+#################################################################
+
+hpo:Surcharge
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:Dilatation
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:MauvaiseConceptionQuantite a hpo:Cause ;
+    rdfs:label "Mauvaise conception quantité"@fr ;
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:MauvaiseConceptionQualite a hpo:Cause ;
+    rdfs:label "Mauvaise conception qualité"@fr ;
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+hpo:MauvaiseConceptionForme a hpo:Cause ;
+    rdfs:label "Mauvaise conception forme"@fr ;
+    hpo:causeAllowedForPathology hpo:VariationDeForme .
+
+#################################################################
+# Causes allowed for Toiture > Zinguerie > ElementDeProtectionZinguerie
+# > Mortier > DeteriorationDesMateriaux
+#################################################################
+
+hpo:AttaqueBiologiqueVegetaux
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:AttaqueBiologiqueDejections
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:CompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:Vetuste
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:Exposition
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+
+#################################################################
+# Causes allowed for Toiture > Zinguerie > ElementDeProtectionZinguerie
+# > Mortier > Decollements/Gonflement/Pulverulence
+#################################################################
+
+hpo:InfiltrationsEau a hpo:Cause ;
+    rdfs:label "Infiltrations d'eau"@fr ;
+    hpo:causeAllowedForPathology hpo:Decollements ;
+    hpo:causeAllowedForPathology hpo:Gonflement ;
+    hpo:causeAllowedForPathology hpo:Pulverulence .
+
+hpo:Ventilation
+    hpo:causeAllowedForPathology hpo:Decollements ;
+    hpo:causeAllowedForPathology hpo:Gonflement ;
+    hpo:causeAllowedForPathology hpo:Pulverulence .
+
+hpo:MauvaiseMiseEnOeuvre a hpo:Cause ;
+    rdfs:label "Mauvaise mise en oeuvre"@fr ;
+    hpo:causeAllowedForPathology hpo:Decollements ;
+    hpo:causeAllowedForPathology hpo:Gonflement ;
+    hpo:causeAllowedForPathology hpo:Pulverulence .
+
+hpo:MauvaisChoixDeMateriaux a hpo:Cause ;
+    rdfs:label "Mauvais choix de matériaux"@fr ;
+    hpo:causeAllowedForPathology hpo:Decollements ;
+    hpo:causeAllowedForPathology hpo:Gonflement ;
+    hpo:causeAllowedForPathology hpo:Pulverulence .
+
+
+#################################################################
+# Causes allowed for Toiture > Zinguerie > ElementDeProtectionZinguerie
+# > Mortier > Fissures
+#################################################################
+
+hpo:InfiltrationsEau
+    hpo:causeAllowedForPathology hpo:Fissures .
+
+hpo:Ventilation
+    hpo:causeAllowedForPathology hpo:Fissures .
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:Fissures .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:Fissures .
+
+
+#################################################################
+# Causes allowed for Toiture > Zinguerie > ElementDeProtectionZinguerie
+# > Mortier > AlterationDesMateriauxAutreQueLeMortier
+#################################################################
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:AlterationDesMateriauxAutreQueLeMortier .
+
+#################################################################
+# Causes allowed for Toiture > Autre > ElementSerrurerieToiture
+# > Metallique/Fibrociment > DeteriorationDesMateriaux
+#################################################################
+
+hpo:CorrosionMauvaiseQualiteTraitement
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:CorrosionInfiltrations
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:CorrosionVentilation
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:AttaqueBiologiqueDejections
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:Accident
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Enclos
+# > Pierre/Parpaing/Brique > Fissure
+#################################################################
+
+hpo:InfiltrationsEau
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:Ventilation
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:Chocs a hpo:Cause ;
+    rdfs:label "Chocs"@fr ;
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:SurchargeDescenteCharges a hpo:Cause ;
+    rdfs:label "Surcharge/Descente de charges"@fr ;
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Enclos
+# > Pierre/Parpaing/Brique > Deformation
+#################################################################
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MiseEnCharge a hpo:Cause ;
+    rdfs:label "Mise en charge"@fr ;
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:Chocs
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Enclos
+# > Pierre/Parpaing/Brique > Desolidarisation
+#################################################################
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:Desolidarisation .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:Desolidarisation .
+
+hpo:MiseEnCharge
+    hpo:causeAllowedForPathology hpo:Desolidarisation .
+
+hpo:Chocs
+    hpo:causeAllowedForPathology hpo:Desolidarisation .
+
+hpo:EchangesHygrologiques a hpo:Cause ;
+    rdfs:label "Echanges hygrologiques"@fr ;
+    hpo:causeAllowedForPathology hpo:Desolidarisation .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:Desolidarisation .
+
+hpo:ExpositionAuxIntemperies a hpo:Cause ;
+    rdfs:label "Exposition aux intempéries"@fr ;
+    hpo:causeAllowedForPathology hpo:Desolidarisation .
+
+hpo:OxydationElementsMetalliques a hpo:Cause ;
+    rdfs:label "Oxydation d'éléments métalliques"@fr ;
+    hpo:causeAllowedForPathology hpo:Desolidarisation .
+
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Enclos
+# > Pierre/Parpaing/Brique > PerteDeMatiere
+#################################################################
+
+hpo:InfiltrationsEau
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:Ventilation
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Enclos
+# > Pierre/Parpaing/Brique > Depot
+#################################################################
+
+hpo:Entretien a hpo:Cause ;
+    rdfs:label "Entretien"@fr ;
+    hpo:causeAllowedForPathology hpo:Depot .
+
+hpo:InfiltrationsEau
+    hpo:causeAllowedForPathology hpo:Depot .
+
+hpo:VandalismeGrafitis a hpo:Cause ;
+    rdfs:label "Vandalisme : grafitis"@fr ;
+    hpo:causeAllowedForPathology hpo:Depot .
+
+hpo:MiseContactParticulesMigrantes a hpo:Cause ;
+    rdfs:label "Mise en contact avec des particules migrantes"@fr ;
+    hpo:causeAllowedForPathology hpo:Depot .
+
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Enclos
+# > Pierre/Parpaing/Brique > AlterationChromatique
+#################################################################
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:AlterationChromatique .
+
+hpo:ExpositionAuxIntemperies
+    hpo:causeAllowedForPathology hpo:AlterationChromatique .
+
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Enclos
+# > Pierre/Parpaing/Brique > ColonisationBiologique
+#################################################################
+
+hpo:AlguesLichenMousseMoisissureChampignons a hpo:Cause ;
+    rdfs:label "Algues/Lichen/Mousse/Moisissure/Champignons"@fr ;
+    hpo:causeAllowedForPathology hpo:ColonisationBiologique .
+
+hpo:Vegetaux a hpo:Cause ;
+    rdfs:label "Végétaux"@fr ;
+    hpo:causeAllowedForPathology hpo:ColonisationBiologique .
+
+hpo:Insectes a hpo:Cause ;
+    rdfs:label "Insectes"@fr ;
+    hpo:causeAllowedForPathology hpo:ColonisationBiologique .
+
+hpo:Vertebres a hpo:Cause ;
+    rdfs:label "Vertébrés"@fr ;
+    hpo:causeAllowedForPathology hpo:ColonisationBiologique .
+
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Enclos
+# > Pierre/Parpaing/Brique > Effondrement
+#################################################################
+
+hpo:SurchargeSimple
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:SurchargeAlterationProprietesMateriaux a hpo:Cause ;
+    rdfs:label "Surcharge suite à l'altération des propriétés des matériaux"@fr ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:MauvaiseConceptionGeometrique
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:MauvaiseConceptionDimensionnementElements
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:MauvaiseConceptionQuantitatif
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:MauvaisChoixDeMateriaux
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:Chocs
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+hpo:MouvementsTerrainStructure a hpo:Cause ;
+    rdfs:label "Mouvements de terrain/structure"@fr ;
+    hpo:causeAllowedForPathology hpo:Effondrement .
+
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Enclos
+# > Pierre/Parpaing/Brique > Gonflement/Fruit/Devers
+#################################################################
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:Gonflement ;
+    hpo:causeAllowedForPathology hpo:Fruit ;
+    hpo:causeAllowedForPathology hpo:Devers .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:Gonflement ;
+    hpo:causeAllowedForPathology hpo:Fruit ;
+    hpo:causeAllowedForPathology hpo:Devers .
+
+hpo:MiseEnCharge
+    hpo:causeAllowedForPathology hpo:Gonflement ;
+    hpo:causeAllowedForPathology hpo:Fruit ;
+    hpo:causeAllowedForPathology hpo:Devers .
+
+hpo:Chocs
+    hpo:causeAllowedForPathology hpo:Gonflement ;
+    hpo:causeAllowedForPathology hpo:Fruit ;
+    hpo:causeAllowedForPathology hpo:Devers .
+
+hpo:EchangesHygrologiques
+    hpo:causeAllowedForPathology hpo:Gonflement ;
+    hpo:causeAllowedForPathology hpo:Fruit ;
+    hpo:causeAllowedForPathology hpo:Devers .
+
+#################################################################
+# Pathology allowed for Exterieur > ElevationExterieure > Amenagements
+# > Metal/Plastique > Disfonctionnement
+#################################################################
+
+hpo:Disfonctionnement a hpo:Pathology ;
+    rdfs:label "Disfonctionnement"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique .
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Amenagements
+# > Metal/Plastique > Disfonctionnement
+#################################################################
+
+hpo:ProblemeArriveeEau a hpo:Cause ;
+    rdfs:label "Problème à l'arrivée d'eau"@fr ;
+    hpo:causeAllowedForPathology hpo:Disfonctionnement .
+
+hpo:DepotImportantCalcaire a hpo:Cause ;
+    rdfs:label "Dépôt important de calcaire"@fr ;
+    hpo:causeAllowedForPathology hpo:Disfonctionnement .
+
+hpo:DefaillanceElementsRobinetterie a hpo:Cause ;
+    rdfs:label "Défaillance des éléments de robinetterie"@fr ;
+    hpo:causeAllowedForPathology hpo:Disfonctionnement .
+
+hpo:DefaillancePompe a hpo:Cause ;
+    rdfs:label "Défaillance de la pompe"@fr ;
+    hpo:causeAllowedForPathology hpo:Disfonctionnement .
+
+hpo:DefaillanceTropPlein a hpo:Cause ;
+    rdfs:label "Défaillance du trop plein"@fr ;
+    hpo:causeAllowedForPathology hpo:Disfonctionnement .
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Amenagements
+# > Bois > Casse
+#################################################################
+
+hpo:Vandalisme a hpo:Cause ;
+    rdfs:label "Vandalisme"@fr ;
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:Chocs
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:Vetuste
+    hpo:causeAllowedForPathology hpo:Casse .
+
+hpo:Entretien
+    hpo:causeAllowedForPathology hpo:Casse .
+
+#################################################################
+# Causes allowed for Exterieur > ElevationExterieure > Amenagements
+# > Bois > DeteriorationDesMateriaux
+#################################################################
+
+hpo:MauvaisTraitementDesBois
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:PresenceDeNuisibles
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:MauvaiseEssence a hpo:Cause ;
+    rdfs:label "Mauvaise essence"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:ExpositionClimatique a hpo:Cause ;
+    rdfs:label "Exposition climatique"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+#################################################################
+# Causes allowed for Sols > VRD > Reseaux
+# > Fonte/TerreCuite/Amiante/Fer/Beton/Plastique > DeteriorationDesMateriaux
+#################################################################
+
+hpo:MauvaiseQualiteTraitement
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:AttaquesBiologiques
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:AttaquesChimiques a hpo:Cause ;
+    rdfs:label "Attaques chimiques"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:ActionHumaine a hpo:Cause ;
+    rdfs:label "Action humaine"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+hpo:ActionMeteorologique a hpo:Cause ;
+    rdfs:label "Action météorologique"@fr ;
+    hpo:causeAllowedForPathology hpo:DeteriorationDesMateriaux .
+
+
+#################################################################
+# Causes allowed for Sols > VRD > Reseaux
+# > Fonte/TerreCuite/Amiante/Fer/Beton/Plastique > FissureCassure
+#################################################################
+
+hpo:Chocs
+    hpo:causeAllowedForPathology hpo:FissureCassure .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:FissureCassure .
+
+hpo:Pose a hpo:Cause ;
+    rdfs:label "Pose"@fr ;
+    hpo:causeAllowedForPathology hpo:FissureCassure .
+
+
+#################################################################
+# Causes allowed for Sols > VRD > Reseaux > Plastique > Deformation
+#################################################################
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:Chocs
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MiseEnCharge
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+#################################################################
+# Causes allowed for Sols > VRD > SolsVRD > Terre > Affaissement
+#################################################################
+
+hpo:QualiteDuSol a hpo:Cause ;
+    rdfs:label "Qualité du sol"@fr ;
+    hpo:causeAllowedForPathology hpo:Affaissement .
+
+hpo:QualiteDuRemblais a hpo:Cause ;
+    rdfs:label "Qualité du remblais"@fr ;
+    hpo:causeAllowedForPathology hpo:Affaissement .
+
+hpo:ModificationHygrologique a hpo:Cause ;
+    rdfs:label "Modification hygrologique"@fr ;
+    hpo:causeAllowedForPathology hpo:Affaissement .
+
+hpo:EffondrementStructureSouterraine a hpo:Cause ;
+    rdfs:label "Effondrement d'une structure sous-terraine"@fr ;
+    hpo:causeAllowedForPathology hpo:Affaissement .
+
+hpo:GlissementDeTerrain a hpo:Cause ;
+    rdfs:label "Glissement de terrain"@fr ;
+    hpo:causeAllowedForPathology hpo:Affaissement .
+
+
+#################################################################
+# Causes allowed for Sols > VRD > SolsVRD > Terre > Fissures
+#################################################################
+
+hpo:QualiteDuSol
+    hpo:causeAllowedForPathology hpo:Fissures .
+
+hpo:ModificationHygrologique
+    hpo:causeAllowedForPathology hpo:Fissures .
+
+hpo:MouvementDeTerrain a hpo:Cause ;
+    rdfs:label "Mouvement de terrain"@fr ;
+    hpo:causeAllowedForPathology hpo:Fissures .
+
+
+#################################################################
+# Causes allowed for Sols > VRD > SolsVRD > Enrobe > Deformation
+#################################################################
+
+hpo:QualiteDuSol
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:ModificationHygrologique
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MouvementDeTerrain
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaiseQualiteMateriaux a hpo:Cause ;
+    rdfs:label "Mauvaise qualité des matériaux"@fr ;
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+#################################################################
+# Causes allowed for Sols > Structure > MurEnterre > Pierre > Fissure
+#################################################################
+
+hpo:InfiltrationsEau
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:Ventilation
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:Chocs
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:SurchargeDescenteCharges
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:QualiteDuSol
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:QualiteDuRemblais
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:ModificationHygrologique
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:EffondrementStructureSouterraine
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+hpo:MouvementDeTerrain
+    hpo:causeAllowedForPathology hpo:Fissure .
+
+#################################################################
+# Causes allowed for Sols > Structure > MurEnterre > Pierre > Deformation
+#################################################################
+
+hpo:Surcharge
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaiseConceptionGeometrique
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaiseConceptionDimensionnementElements
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:QualiteDuSol
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:ModificationHygrologique
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MouvementDeTerrain
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+hpo:MauvaiseQualiteMateriaux
+    hpo:causeAllowedForPathology hpo:Deformation .
+
+#################################################################
+# Causes allowed for Sols > Structure > MurEnterre > Pierre > PerteDeMatiere
+#################################################################
+
+hpo:MauvaiseVentilation
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:Infiltrations
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:MauvaiseMiseEnOeuvre
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:MauvaisChoixDeMateriaux
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:Exposition
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:AttaqueBiologiqueCause a hpo:Cause ;
+    rdfs:label "Attaque biologique"@fr ;
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:AttaquesChimiques
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+hpo:ActionHumaine
+    hpo:causeAllowedForPathology hpo:PerteDeMatiere .
+
+#################################################################
+# Causes allowed for Sols > Structure > MurEnterre > Pierre > DegradationDesMortiers
+#################################################################
+
+hpo:AttaqueBiologiqueVegetaux
+    hpo:causeAllowedForPathology hpo:DegradationDesMortiers .
+
+hpo:AttaqueBiologiqueDejections
+    hpo:causeAllowedForPathology hpo:DegradationDesMortiers .
+
+hpo:CompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:DegradationDesMortiers .
+
+hpo:Vetuste
+    hpo:causeAllowedForPathology hpo:DegradationDesMortiers .
+
+hpo:Exposition
+    hpo:causeAllowedForPathology hpo:DegradationDesMortiers .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:DegradationDesMortiers .
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > TerreCuite/Dallage/Carrelage > Delitee
+#################################################################
+
+hpo:MauvaiseQualite a hpo:Cause ;
+    rdfs:label "Mauvaise qualité"@fr ;
+    hpo:causeAllowedForPathology hpo:Delitee .
+
+hpo:ExpositionAuxIntemperies
+    hpo:causeAllowedForPathology hpo:Delitee .
+
+hpo:Infiltrations
+    hpo:causeAllowedForPathology hpo:Delitee .
+
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > TerreCuite/Dallage/Carrelage > Fendue
+#################################################################
+
+hpo:Chocs
+    hpo:causeAllowedForPathology hpo:Fendue .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:Fendue .
+
+hpo:Pose
+    hpo:causeAllowedForPathology hpo:Fendue .
+
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > TerreCuite/Dallage/Carrelage > Poreuse
+#################################################################
+
+hpo:MauvaiseQualite
+    hpo:causeAllowedForPathology hpo:Poreuse .
+
+hpo:ExpositionAuxIntemperies
+    hpo:causeAllowedForPathology hpo:Poreuse .
+
+hpo:Infiltrations
+    hpo:causeAllowedForPathology hpo:Poreuse .
+
+hpo:AttaquesChimiques
+    hpo:causeAllowedForPathology hpo:Poreuse .
+
+hpo:AttaquesBiologiques
+    hpo:causeAllowedForPathology hpo:Poreuse .
+
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > TerreCuite/Dallage/Carrelage > DecolleManquante
+#################################################################
+
+hpo:MauvaiseQualiteColle a hpo:Cause ;
+    rdfs:label "Mauvaise qualité de la colle"@fr ;
+    hpo:causeAllowedForPathology hpo:DecolleManquante .
+
+hpo:MauvaisePreparationSupports a hpo:Cause ;
+    rdfs:label "Mauvaise préparation des supports"@fr ;
+    hpo:causeAllowedForPathology hpo:DecolleManquante .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:DecolleManquante .
+
+hpo:MouvementStructure a hpo:Cause ;
+    rdfs:label "Mouvement de la structure"@fr ;
+    hpo:causeAllowedForPathology hpo:DecolleManquante .
+
+hpo:Infiltrations
+    hpo:causeAllowedForPathology hpo:DecolleManquante .
+
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > TerreCuite/Dallage/Carrelage > Tache
+#################################################################
+
+hpo:Infiltrations
+    hpo:causeAllowedForPathology hpo:Tache .
+
+hpo:VandalismeGrafitis
+    hpo:causeAllowedForPathology hpo:Tache .
+
+hpo:Entretien
+    hpo:causeAllowedForPathology hpo:Tache .
+
+hpo:MiseContactParticulesMigrantes
+    hpo:causeAllowedForPathology hpo:Tache .
+
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > TerreCuite/Dallage/Carrelage > Deformations/DeformationConvexe/DeformationConcave
+#################################################################
+
+hpo:DeformationDuSupport a hpo:Cause ;
+    rdfs:label "Déformation du support"@fr ;
+    hpo:causeAllowedForPathology hpo:Deformations ;
+    hpo:causeAllowedForPathology hpo:DeformationConvexe ;
+    hpo:causeAllowedForPathology hpo:DeformationConcave .
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > Beton > TracesHumidite
+#################################################################
+
+hpo:FuiteReseau a hpo:Cause ;
+    rdfs:label "Fuite d'un réseau"@fr ;
+    hpo:causeAllowedForPathology hpo:TracesHumidite .
+
+hpo:FuiteMenuiseries a hpo:Cause ;
+    rdfs:label "Fuite de menuiseries"@fr ;
+    hpo:causeAllowedForPathology hpo:TracesHumidite .
+
+hpo:InfiltrationsCapilarite a hpo:Cause ;
+    rdfs:label "Infiltrations par capilarité"@fr ;
+    hpo:causeAllowedForPathology hpo:TracesHumidite .
+
+hpo:InfiltrationToiture a hpo:Cause ;
+    rdfs:label "Infiltration par la toiture"@fr ;
+    hpo:causeAllowedForPathology hpo:TracesHumidite .
+
+hpo:Ventilation
+    hpo:causeAllowedForPathology hpo:TracesHumidite .
+
+hpo:DefautMiseEnOeuvre a hpo:Cause ;
+    rdfs:label "Défaut de mise en oeuvre"@fr ;
+    hpo:causeAllowedForPathology hpo:TracesHumidite .
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > Bois > QuincaillerieInexistant
+#################################################################
+
+hpo:DefautDeConception a hpo:Cause ;
+    rdfs:label "Défaut de conception"@fr ;
+    hpo:causeAllowedForPathology hpo:QuincaillerieInexistant .
+
+hpo:DegradationDesMateriauxCause a hpo:Cause ;
+    rdfs:label "Dégradation des matériaux"@fr ;
+    hpo:causeAllowedForPathology hpo:QuincaillerieInexistant .
+
+hpo:DegradationAssemblage a hpo:Cause ;
+    rdfs:label "Dégradation de l'assemblage"@fr ;
+    hpo:causeAllowedForPathology hpo:QuincaillerieInexistant .
+
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > Bois > QuincaillerieVariationDeForme
+#################################################################
+
+hpo:Surcharge
+    hpo:causeAllowedForPathology hpo:QuincaillerieVariationDeForme .
+
+hpo:Dilatation
+    hpo:causeAllowedForPathology hpo:QuincaillerieVariationDeForme .
+
+hpo:MauvaiseConceptionQualite
+    hpo:causeAllowedForPathology hpo:QuincaillerieVariationDeForme .
+
+hpo:MauvaiseConceptionQuantite
+    hpo:causeAllowedForPathology hpo:QuincaillerieVariationDeForme .
+
+hpo:MauvaiseConceptionForme
+    hpo:causeAllowedForPathology hpo:QuincaillerieVariationDeForme .
+
+
+#################################################################
+# Causes allowed for Interieur > ElementAcces > SolsInterieurs
+# > Bois > QuincaillerieDeteriorationDesMateriaux
+#################################################################
+
+hpo:CorrosionMauvaiseQualiteTraitement
+    hpo:causeAllowedForPathology hpo:QuincaillerieDeteriorationDesMateriaux .
+
+hpo:CorrosionInfiltrations
+    hpo:causeAllowedForPathology hpo:QuincaillerieDeteriorationDesMateriaux .
+
+hpo:CorrosionVentilation
+    hpo:causeAllowedForPathology hpo:QuincaillerieDeteriorationDesMateriaux .
+
+hpo:IncompatibiliteDesMateriaux
+    hpo:causeAllowedForPathology hpo:QuincaillerieDeteriorationDesMateriaux .
+
+hpo:AttaqueBiologiqueDejections
+    hpo:causeAllowedForPathology hpo:QuincaillerieDeteriorationDesMateriaux .
+
+hpo:MouvementsCause
+    hpo:causeAllowedForPathology hpo:QuincaillerieDeteriorationDesMateriaux .
+
+hpo:Accident
+    hpo:causeAllowedForPathology hpo:QuincaillerieDeteriorationDesMateriaux .

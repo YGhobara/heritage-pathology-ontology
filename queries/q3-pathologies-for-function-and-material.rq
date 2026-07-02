@@ -1,0 +1,14 @@
+PREFIX hpo: <https://example.org/heritage-pathology-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?pathology ?pathologyLabel
+WHERE {
+  ?pathology a hpo:Pathology ;
+      rdfs:label ?pathologyLabel .
+
+  ?pathology hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieInterieur .
+  ?pathology hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+  FILTER(lang(?pathologyLabel) = "fr")
+}
+ORDER BY ?pathologyLabel

@@ -1,0 +1,1728 @@
+@prefix hpo: <https://example.org/heritage-pathology-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Components allowed for Toiture > Charpente > ElementStructurelCharpente > Bois
+#################################################################
+
+hpo:Ferme a hpo:Component ;
+    rdfs:label "Ferme"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Entrait a hpo:Component ;
+    rdfs:label "Entrait"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Contrefiche a hpo:Component ;
+    rdfs:label "Contrefiche"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Poincon a hpo:Component ;
+    rdfs:label "Poinçon"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Panne a hpo:Component ;
+    rdfs:label "Panne"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:PanneSabliere a hpo:Component ;
+    rdfs:label "Panne sablière"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:PanneFaitiere a hpo:Component ;
+    rdfs:label "Panne faîtière"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:ArbaletrierDeNoue a hpo:Component ;
+    rdfs:label "Arbalétrier de noue"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:ArbaletrierDeDemiCoupe a hpo:Component ;
+    rdfs:label "Arbalétrier de demis coupe"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:ArbaletrierDAretier a hpo:Component ;
+    rdfs:label "Arbalétrier d’arêtier"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Arbaletrier a hpo:Component ;
+    rdfs:label "Arbalétrier"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Chevetre a hpo:Component ;
+    rdfs:label "Chevêtre"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Chevron a hpo:Component ;
+    rdfs:label "Chevron"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Components allowed for Toiture > Charpente > ElementStructurelCharpente > Acier
+#################################################################
+
+hpo:Ferme
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Entrait
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Contrefiche
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Poincon
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Panne
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:PanneSabliere
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:PanneFaitiere
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:ArbaletrierDeNoue
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:ArbaletrierDeDemiCoupe
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:ArbaletrierDAretier
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Arbaletrier
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Chevetre
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:ContreventementLongitudinaleJambette a hpo:Component ;
+    rdfs:label "Contreventement longitudinale Jambette"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Fiche a hpo:Component ;
+    rdfs:label "Fiche"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Gousset a hpo:Component ;
+    rdfs:label "Gousset"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Coyer a hpo:Component ;
+    rdfs:label "Coyer"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:DemiEntrait a hpo:Component ;
+    rdfs:label "Demi entrait"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Montant a hpo:Component ;
+    rdfs:label "Montant"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Traverse a hpo:Component ;
+    rdfs:label "Traverse"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Poteau a hpo:Component ;
+    rdfs:label "Poteau"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+#################################################################
+# Components allowed for Toiture > Charpente > ElementStructurelCharpente > Fer
+#################################################################
+
+hpo:Ferme
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Entrait
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Contrefiche
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Poincon
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Panne
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:PanneSabliere
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:PanneFaitiere
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:ArbaletrierDeNoue
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:ArbaletrierDeDemiCoupe
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:ArbaletrierDAretier
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Arbaletrier
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Chevetre
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:ContreventementLongitudinaleJambette
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Fiche
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Gousset
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Coyer
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:DemiEntrait
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Montant
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Traverse
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Poteau
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Components allowed for Toiture > Charpente > PieceDeFixationCharpente
+#################################################################
+
+hpo:Echantignole a hpo:Component ;
+    rdfs:label "Échantignole"@fr ;
+    hpo:componentAllowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Equerre a hpo:Component ;
+    rdfs:label "Équerre"@fr ;
+    hpo:componentAllowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Acier ;
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Axe a hpo:Component ;
+    rdfs:label "Axe"@fr ;
+    hpo:componentAllowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Acier ;
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Platine a hpo:Component ;
+    rdfs:label "Platine"@fr ;
+    hpo:componentAllowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Acier ;
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Rotule a hpo:Component ;
+    rdfs:label "Rotule"@fr ;
+    hpo:componentAllowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Acier ;
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Components allowed for Toiture > Charpente > ElementDeFixationCharpente
+#################################################################
+
+hpo:TenonEtMortaise a hpo:Component ;
+    rdfs:label "Tenon et mortaise"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Boulon a hpo:Component ;
+    rdfs:label "Boulon"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Vis a hpo:Component ;
+    rdfs:label "Vis"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Colle a hpo:Component ;
+    rdfs:label "Colle"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Rivet a hpo:Component ;
+    rdfs:label "Rivet"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:CordonDeSoudure a hpo:Component ;
+    rdfs:label "Cordon de soudure"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCharpente ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+#################################################################
+# Components allowed for Toiture > Couverture > ElementCouvrant > Acier/Fer/Plastique/Amiante
+#################################################################
+
+hpo:ToleOndulee a hpo:Component ;
+    rdfs:label "Tôle ondulée"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:componentAllowedForMaterial hpo:Acier ;
+    hpo:componentAllowedForMaterial hpo:Fer ;
+    hpo:componentAllowedForMaterial hpo:Plastique ;
+    hpo:componentAllowedForMaterial hpo:Amiante .
+
+hpo:ToleNervuree a hpo:Component ;
+    rdfs:label "Tôle nervurée"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:componentAllowedForMaterial hpo:Acier ;
+    hpo:componentAllowedForMaterial hpo:Fer ;
+    hpo:componentAllowedForMaterial hpo:Plastique ;
+    hpo:componentAllowedForMaterial hpo:Amiante .
+
+hpo:ElementTranslucide a hpo:Component ;
+    rdfs:label "Élément translucide"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:componentAllowedForMaterial hpo:Acier ;
+    hpo:componentAllowedForMaterial hpo:Fer ;
+    hpo:componentAllowedForMaterial hpo:Plastique ;
+    hpo:componentAllowedForMaterial hpo:Amiante .
+
+hpo:FibrocimentComponent a hpo:Component ;
+    rdfs:label "Fibrociment"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:componentAllowedForMaterial hpo:Acier ;
+    hpo:componentAllowedForMaterial hpo:Fer ;
+    hpo:componentAllowedForMaterial hpo:Plastique ;
+    hpo:componentAllowedForMaterial hpo:Amiante .
+
+#################################################################
+# Components allowed for Toiture > Couverture > ElementCouvrant > Bois
+#################################################################
+
+hpo:Parfeuilles a hpo:Component ;
+    rdfs:label "Parfeuilles"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Volige a hpo:Component ;
+    rdfs:label "Volige"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:TuilesPlate a hpo:Component ;
+    rdfs:label "Tuiles plate"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:TuilesCanal a hpo:Component ;
+    rdfs:label "Tuiles canal"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Components allowed for Toiture > Couverture > ElementCouvrant > TerreCuite
+#################################################################
+
+hpo:Parfeuilles
+    hpo:componentAllowedForMaterial hpo:TerreCuite .
+
+hpo:Volige
+    hpo:componentAllowedForMaterial hpo:TerreCuite .
+
+hpo:TuilesPlate
+    hpo:componentAllowedForMaterial hpo:TerreCuite .
+
+hpo:TuilesCanal
+    hpo:componentAllowedForMaterial hpo:TerreCuite .
+
+#################################################################
+# Components allowed for Toiture > Couverture > ElementDeFixationCouverture > Acier
+#################################################################
+
+hpo:Vis
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:Crochet a hpo:Component ;
+    rdfs:label "Crochet"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+hpo:RondelleEtancheitePlaquette a hpo:Component ;
+    rdfs:label "Rondelle d’étanchéité et plaquette"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:componentAllowedForMaterial hpo:Acier .
+
+#################################################################
+# Components allowed for Toiture > Couverture > ElementDeFixationCouverture > Fer
+#################################################################
+
+hpo:Vis
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Crochet
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:RondelleEtancheitePlaquette
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Components allowed for Toiture > Couverture > ElementDeFixationCouverture > Bois
+#################################################################
+
+hpo:Liteaux a hpo:Component ;
+    rdfs:label "Liteaux"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:MortierComponent a hpo:Component ;
+    rdfs:label "Mortier"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Colle
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementEcoulement > Zinc
+#################################################################
+
+hpo:Gouttiere a hpo:Component ;
+    rdfs:label "Gouttière"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEcoulement ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:Talon a hpo:Component ;
+    rdfs:label "Talon"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEcoulement ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:Descente a hpo:Component ;
+    rdfs:label "Descente"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEcoulement ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:Dauphin a hpo:Component ;
+    rdfs:label "Dauphin"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEcoulement ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:CuvetteDeBranchement a hpo:Component ;
+    rdfs:label "Cuvette de branchement"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEcoulement ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:Cheneau a hpo:Component ;
+    rdfs:label "Chéneau"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEcoulement ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:Noue a hpo:Component ;
+    rdfs:label "Noue"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEcoulement ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementEcoulement > Cuivre/PVC
+#################################################################
+
+hpo:Gouttiere
+    hpo:componentAllowedForMaterial hpo:Cuivre ;
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:Talon
+    hpo:componentAllowedForMaterial hpo:Cuivre ;
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:Descente
+    hpo:componentAllowedForMaterial hpo:Cuivre ;
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:Dauphin
+    hpo:componentAllowedForMaterial hpo:Cuivre ;
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:CuvetteDeBranchement
+    hpo:componentAllowedForMaterial hpo:Cuivre ;
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:Cheneau
+    hpo:componentAllowedForMaterial hpo:Cuivre ;
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:Noue
+    hpo:componentAllowedForMaterial hpo:Cuivre ;
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementEcoulement > Fonte
+#################################################################
+
+hpo:Dauphin
+    hpo:componentAllowedForMaterial hpo:Fonte .
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementEcoulement > Metallique
+#################################################################
+
+hpo:Crapaudine a hpo:Component ;
+    rdfs:label "Crapaudine"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEcoulement ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementDeFixationZinguerie > Zinc
+#################################################################
+
+hpo:Collier a hpo:Component ;
+    rdfs:label "Collier"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:CrochetEtHampe a hpo:Component ;
+    rdfs:label "Crochet & hampe"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:Bague a hpo:Component ;
+    rdfs:label "Bague"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:Manchon a hpo:Component ;
+    rdfs:label "Manchon"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:Emboitement a hpo:Component ;
+    rdfs:label "Emboîtement"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+hpo:Soudure a hpo:Component ;
+    rdfs:label "Soudure"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeFixationZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Zinc .
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementDeFixationZinguerie > Cuivre
+#################################################################
+
+hpo:Collier
+    hpo:componentAllowedForMaterial hpo:Cuivre .
+
+hpo:CrochetEtHampe
+    hpo:componentAllowedForMaterial hpo:Cuivre .
+
+hpo:Bague
+    hpo:componentAllowedForMaterial hpo:Cuivre .
+
+hpo:Manchon
+    hpo:componentAllowedForMaterial hpo:Cuivre .
+
+hpo:Emboitement
+    hpo:componentAllowedForMaterial hpo:Cuivre .
+
+hpo:Soudure
+    hpo:componentAllowedForMaterial hpo:Cuivre .
+
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementDeFixationZinguerie > PVC
+#################################################################
+
+hpo:Collier
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:CrochetEtHampe
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:Bague
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:Manchon
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+hpo:Emboitement
+    hpo:componentAllowedForMaterial hpo:PVC .
+
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementDeFixationZinguerie > Plomb
+#################################################################
+
+hpo:Soudure
+    hpo:componentAllowedForMaterial hpo:Plomb .
+
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementDeFixationZinguerie > Fonte
+#################################################################
+
+hpo:Bague
+    hpo:componentAllowedForMaterial hpo:Fonte .
+
+hpo:Manchon
+    hpo:componentAllowedForMaterial hpo:Fonte .
+
+hpo:Emboitement
+    hpo:componentAllowedForMaterial hpo:Fonte .
+
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementDeFixationZinguerie > Metallique
+#################################################################
+
+hpo:Emboitement
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Components allowed for Toiture > Zinguerie > ElementDeProtectionZinguerie
+#################################################################
+
+hpo:Solin a hpo:Component ;
+    rdfs:label "Solin"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Zinc ;
+    hpo:componentAllowedForMaterial hpo:Calendrite ;
+    hpo:componentAllowedForMaterial hpo:Plomb ;
+    hpo:componentAllowedForMaterial hpo:Mortier ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite .
+
+hpo:Entablements a hpo:Component ;
+    rdfs:label "Entablements"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Zinc ;
+    hpo:componentAllowedForMaterial hpo:Calendrite ;
+    hpo:componentAllowedForMaterial hpo:Plomb .
+
+hpo:Faitage a hpo:Component ;
+    rdfs:label "Faîtage"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Plomb ;
+    hpo:componentAllowedForMaterial hpo:PVC ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:Genoise a hpo:Component ;
+    rdfs:label "Génoise"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:CacheMoineau a hpo:Component ;
+    rdfs:label "Cache moineau"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+
+#################################################################
+# Components allowed for Toiture > Autre > ElementMaconneToiture
+#################################################################
+
+hpo:SoucheDeCheminee a hpo:Component ;
+    rdfs:label "Souche de cheminée"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Mitre a hpo:Component ;
+    rdfs:label "Mitre"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:JointsDeChaux a hpo:Component ;
+    rdfs:label "Joints de chaux"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:JointDeCimentOuResine a hpo:Component ;
+    rdfs:label "Joint de ciment ou résine"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeChaux a hpo:Component ;
+    rdfs:label "Enduit de chaux"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeCimentOuResine a hpo:Component ;
+    rdfs:label "Enduit de ciment ou résine"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Components allowed for Toiture > Autre > ElementMenuiserieToiture
+#################################################################
+
+hpo:Lucarne a hpo:Component ;
+    rdfs:label "Lucarne"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementMenuiserieToiture ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Components allowed for Toiture > Autre > ElementSerrurerieToiture
+#################################################################
+
+hpo:Conduit a hpo:Component ;
+    rdfs:label "Conduit"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementSerrurerieToiture ;
+    hpo:componentAllowedForMaterial hpo:Metallique ;
+    hpo:componentAllowedForMaterial hpo:Fibrociment .
+
+hpo:Mitre
+    hpo:componentAllowedForElementFunction hpo:ElementSerrurerieToiture ;
+    hpo:componentAllowedForMaterial hpo:Metallique ;
+    hpo:componentAllowedForMaterial hpo:Fibrociment .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementDeParement > Pierre
+#################################################################
+
+hpo:ParementPierreDeTaille a hpo:Component ;
+    rdfs:label "Parement pierre de taille"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:ParementDeMoellon a hpo:Component ;
+    rdfs:label "Parement de moellon"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:ParementDeMoellonEquarri a hpo:Component ;
+    rdfs:label "Parement de moellon équarri"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:ChainageVerticale a hpo:Component ;
+    rdfs:label "Chaînage verticale"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:ChainageHorizontal a hpo:Component ;
+    rdfs:label "Chaînage horizontal"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Pilier a hpo:Component ;
+    rdfs:label "Pilier"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Pilastre a hpo:Component ;
+    rdfs:label "Pilastre"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Bandeau a hpo:Component ;
+    rdfs:label "Bandeau"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Entablement a hpo:Component ;
+    rdfs:label "Entablement"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Corniche a hpo:Component ;
+    rdfs:label "Corniche"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementDeParement > Parpaing
+#################################################################
+
+hpo:ParementPierreDeTaille
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:ParementDeMoellon
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:ParementDeMoellonEquarri
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:ChainageVerticale
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:ChainageHorizontal
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Pilier
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Pilastre
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementDeParement > Mortier
+#################################################################
+
+hpo:JointsDeChaux
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:JointDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeChaux
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:BetonDeCiment a hpo:Component ;
+    rdfs:label "Béton de ciment"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementDeParement > Metal
+#################################################################
+
+hpo:CleDeTyran a hpo:Component ;
+    rdfs:label "Clé de tyran"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:ElementsDeFixations a hpo:Component ;
+    rdfs:label "Éléments de fixations"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:GardeCorps a hpo:Component ;
+    rdfs:label "Garde-corps"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Corbeau a hpo:Component ;
+    rdfs:label "Corbeau"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementEnSaillie > Pierre
+#################################################################
+
+hpo:Contrefort a hpo:Component ;
+    rdfs:label "Contrefort"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Echauguette a hpo:Component ;
+    rdfs:label "Échauguette"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Balcons a hpo:Component ;
+    rdfs:label "Balcons"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:EscalierDegre a hpo:Component ;
+    rdfs:label "Escalier degré"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementEnSaillie > Parpaing
+#################################################################
+
+hpo:Contrefort
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Echauguette
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Balcons
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:EscalierDegre
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementEnSaillie > Metal
+#################################################################
+
+hpo:Balcons
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:EscalierDegre
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementEnSaillie > Mortier
+#################################################################
+
+hpo:JointsDeChaux
+    hpo:componentAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:JointDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeChaux
+    hpo:componentAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementDeBaieExterieur > Pierre
+#################################################################
+
+hpo:Fenetre a hpo:Component ;
+    rdfs:label "Fenêtre"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Porte a hpo:Component ;
+    rdfs:label "Porte"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Soupirail a hpo:Component ;
+    rdfs:label "Soupirail"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Colonnade a hpo:Component ;
+    rdfs:label "Colonnade"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementDeBaieExterieur > Parpaing
+#################################################################
+
+hpo:Fenetre
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Porte
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Soupirail
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Colonnade
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementDeBaieExterieur > Metal
+#################################################################
+
+hpo:GardeCorps
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Barreaux a hpo:Component ;
+    rdfs:label "Barreaux"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Portail a hpo:Component ;
+    rdfs:label "Portail"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Fenetre
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:PanneauxPleins a hpo:Component ;
+    rdfs:label "Panneaux pleins"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Gonds a hpo:Component ;
+    rdfs:label "Gonds"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementDeBaieExterieur > Mortier
+#################################################################
+
+hpo:JointsDeChaux
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:JointDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeChaux
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Components allowed for Exterieur > Facade > ElementDeBaieExterieur > Bois
+#################################################################
+
+hpo:Fenetre
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Porte
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Volets a hpo:Component ;
+    rdfs:label "Volets"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Persienne a hpo:Component ;
+    rdfs:label "Persienne"@fr ;
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:PanneauxPleins
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Enclos > Pierre
+#################################################################
+
+hpo:MurDeCloture a hpo:Component ;
+    rdfs:label "Mur de clôture"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:MurDeSoutenement a hpo:Component ;
+    rdfs:label "Mur de soutènement"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Enclos > Parpaing
+#################################################################
+
+hpo:MurDeCloture
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:MurDeSoutenement
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Enclos > Brique
+#################################################################
+
+hpo:MurDeCloture
+    hpo:componentAllowedForMaterial hpo:Brique .
+
+hpo:MurDeSoutenement
+    hpo:componentAllowedForMaterial hpo:Brique .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Enclos > Mortier
+#################################################################
+
+hpo:JointsDeChaux
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:JointDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeChaux
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Enclos > Metal
+#################################################################
+
+hpo:Grillage a hpo:Component ;
+    rdfs:label "Grillage"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Barreaux
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Portail
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:PanneauxPleins
+    hpo:componentAllowedForElementFunction hpo:Enclos ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Amenagements > Pierre
+#################################################################
+
+hpo:Fontaine a hpo:Component ;
+    rdfs:label "Fontaine"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Amenagements ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Jardinet a hpo:Component ;
+    rdfs:label "Jardinet"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Amenagements ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Escalier
+    hpo:componentAllowedForElementFunction hpo:Amenagements ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Amenagements > Parpaing
+#################################################################
+
+hpo:Fontaine
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Amenagements > Brique
+#################################################################
+
+hpo:Fontaine
+    hpo:componentAllowedForMaterial hpo:Brique .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Amenagements > Metal
+#################################################################
+
+hpo:Fontaine
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Escalier
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Amenagements > Plastique
+#################################################################
+
+hpo:Fontaine
+    hpo:componentAllowedForMaterial hpo:Plastique .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Amenagements > Beton
+#################################################################
+
+hpo:Fontaine
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+hpo:Escalier
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+hpo:Trottoir a hpo:Component ;
+    rdfs:label "Trottoir"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Amenagements ;
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+hpo:DallageComponent a hpo:Component ;
+    rdfs:label "Dallage"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Amenagements ;
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+hpo:EnrobeComponent a hpo:Component ;
+    rdfs:label "Enrobé"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Amenagements ;
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+hpo:Terrasse a hpo:Component ;
+    rdfs:label "Terrasse"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Amenagements ;
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Amenagements > Bois
+#################################################################
+
+hpo:Jardinet
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Components allowed for Exterieur > ElevationExterieure > Amenagements > Enrobe
+#################################################################
+
+hpo:Trottoir
+    hpo:componentAllowedForMaterial hpo:Enrobe .
+
+hpo:DallageComponent
+    hpo:componentAllowedForMaterial hpo:Enrobe .
+
+hpo:EnrobeComponent
+    hpo:componentAllowedForMaterial hpo:Enrobe .
+
+hpo:Terrasse
+    hpo:componentAllowedForMaterial hpo:Enrobe .
+
+#################################################################
+# Components allowed for Sols > VRD > Reseaux > Fonte
+#################################################################
+
+hpo:Tampon a hpo:Component ;
+    rdfs:label "Tampon"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Reseaux ;
+    hpo:componentAllowedForMaterial hpo:Fonte .
+
+hpo:Tuyaux a hpo:Component ;
+    rdfs:label "Tuyaux"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Reseaux ;
+    hpo:componentAllowedForMaterial hpo:Fonte .
+
+#################################################################
+# Components allowed for Sols > VRD > Reseaux > Plastique
+#################################################################
+
+hpo:Tuyaux
+    hpo:componentAllowedForMaterial hpo:Plastique .
+
+#################################################################
+# Components allowed for Sols > VRD > Reseaux > TerreCuite
+#################################################################
+
+hpo:Tuyaux
+    hpo:componentAllowedForMaterial hpo:TerreCuite .
+
+#################################################################
+# Components allowed for Sols > VRD > Reseaux > Amiante
+#################################################################
+
+hpo:Tuyaux
+    hpo:componentAllowedForMaterial hpo:Amiante .
+
+#################################################################
+# Components allowed for Sols > VRD > Reseaux > Fer
+#################################################################
+
+hpo:Tuyaux
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Components allowed for Sols > VRD > Reseaux > Beton
+#################################################################
+
+hpo:Regard a hpo:Component ;
+    rdfs:label "Regard"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Reseaux ;
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+
+#################################################################
+# Components allowed for Interieur > ElementStructurel > Vertical > Pierre/Parpaing/Brique
+#################################################################
+
+hpo:MurDeRefend a hpo:Component ;
+    rdfs:label "Mur de refend"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing ;
+    hpo:componentAllowedForMaterial hpo:Brique .
+
+hpo:Plancher a hpo:Component ;
+    rdfs:label "Plancher"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing ;
+    hpo:componentAllowedForMaterial hpo:Brique .
+
+hpo:Corbeau
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing ;
+    hpo:componentAllowedForMaterial hpo:Brique .
+
+hpo:Poteaux a hpo:Component ;
+    rdfs:label "Poteaux"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing ;
+    hpo:componentAllowedForMaterial hpo:Brique .
+
+hpo:Piliers a hpo:Component ;
+    rdfs:label "Piliers"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing ;
+    hpo:componentAllowedForMaterial hpo:Brique .
+
+#################################################################
+# Components allowed for Interieur > ElementStructurel > Vertical > Mortier
+#################################################################
+
+hpo:JointsDeChaux
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:JointDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeChaux
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:BadigeonComponent a hpo:Component ;
+    rdfs:label "Badigeon"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:DecorsPeintComponent a hpo:Component ;
+    rdfs:label "Décors peint"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Vertical ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Components allowed for Interieur > ElementStructurel > Horizontal > Pierre/Parpaing/Brique
+#################################################################
+
+hpo:Voute a hpo:Component ;
+    rdfs:label "Voûte"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Horizontal ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing ;
+    hpo:componentAllowedForMaterial hpo:Brique .
+
+#################################################################
+# Components allowed for Interieur > ElementStructurel > Horizontal > Mortier
+#################################################################
+
+hpo:JointsDeChaux
+    hpo:componentAllowedForElementFunction hpo:Horizontal ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:JointDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:Horizontal ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeChaux
+    hpo:componentAllowedForElementFunction hpo:Horizontal ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:Horizontal ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:BadigeonComponent
+    hpo:componentAllowedForElementFunction hpo:Horizontal ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:DecorsPeintComponent
+    hpo:componentAllowedForElementFunction hpo:Horizontal ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:Plancher
+    hpo:componentAllowedForElementFunction hpo:Horizontal ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Components allowed for Interieur > ElementStructurel > Horizontal > Bois
+#################################################################
+
+hpo:Plancher
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > Escalier > Pierre
+#################################################################
+
+hpo:Giron a hpo:Component ;
+    rdfs:label "Giron"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:ContreMarche a hpo:Component ;
+    rdfs:label "Contre marche"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Marche a hpo:Component ;
+    rdfs:label "Marche"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Limon a hpo:Component ;
+    rdfs:label "Limon"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Paillasse a hpo:Component ;
+    rdfs:label "Paillasse"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:NezDeMarche a hpo:Component ;
+    rdfs:label "Nez de marche"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:MurDEchiffre a hpo:Component ;
+    rdfs:label "Mur d’échiffre"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:MurDeCage a hpo:Component ;
+    rdfs:label "Mur de cage"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+hpo:Palier a hpo:Component ;
+    rdfs:label "Palier"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > Escalier > Beton/Bois
+#################################################################
+
+hpo:Girond
+    hpo:componentAllowedForMaterial hpo:Beton ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:ContreMarche
+    hpo:componentAllowedForMaterial hpo:Beton ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Marche
+    hpo:componentAllowedForMaterial hpo:Beton ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Limon
+    hpo:componentAllowedForMaterial hpo:Beton ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Paillasse
+    hpo:componentAllowedForMaterial hpo:Beton ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:NezDeMarche
+    hpo:componentAllowedForMaterial hpo:Beton ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:MurDEchiffre
+    hpo:componentAllowedForMaterial hpo:Beton ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:MurDeCage
+    hpo:componentAllowedForMaterial hpo:Beton ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Palier
+    hpo:componentAllowedForMaterial hpo:Beton ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > Escalier > Fer
+#################################################################
+
+hpo:NezDeMarche
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:Rampe a hpo:Component ;
+    rdfs:label "Rampe"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+hpo:GardeCorps
+    hpo:componentAllowedForElementFunction hpo:Escalier ;
+    hpo:componentAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > SolsInterieurs > TerreCuite/Dallage/Carrelage/Lino
+#################################################################
+
+hpo:Colle
+    hpo:componentAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Dallage ;
+    hpo:componentAllowedForMaterial hpo:Carrelage ;
+    hpo:componentAllowedForMaterial hpo:Lino .
+
+hpo:Remplissage a hpo:Component ;
+    rdfs:label "Remplissage"@fr ;
+    hpo:componentAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Dallage ;
+    hpo:componentAllowedForMaterial hpo:Carrelage ;
+    hpo:componentAllowedForMaterial hpo:Lino .
+
+hpo:Support a hpo:Component ;
+    rdfs:label "Support"@fr ;
+    hpo:componentAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Dallage ;
+    hpo:componentAllowedForMaterial hpo:Carrelage ;
+    hpo:componentAllowedForMaterial hpo:Lino .
+
+hpo:MateriauComponent a hpo:Component ;
+    rdfs:label "Matériau"@fr ;
+    hpo:componentAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Dallage ;
+    hpo:componentAllowedForMaterial hpo:Carrelage ;
+    hpo:componentAllowedForMaterial hpo:Lino .
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > SolsInterieurs > Beton
+#################################################################
+
+hpo:Ferraillage a hpo:Component ;
+    rdfs:label "Ferraillage"@fr ;
+    hpo:componentAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+hpo:Remplissage
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+hpo:Support
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+hpo:MateriauComponent
+    hpo:componentAllowedForMaterial hpo:Beton .
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > SolsInterieurs > Bois
+#################################################################
+
+hpo:Quincaillerie a hpo:Component ;
+    rdfs:label "Quincaillerie"@fr ;
+    hpo:componentAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Support
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:MateriauComponent
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > ElementDeBaieInterieur > Pierre/Parpaing
+#################################################################
+
+hpo:Fenetre
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Porte
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Soupirail
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+hpo:Colonnade
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Parpaing .
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > ElementDeBaieInterieur > Metal
+#################################################################
+
+hpo:GardeCorps
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Barreaux
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Portail
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Fenetre
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:PanneauxPleins
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Gonds
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > ElementDeBaieInterieur > Mortier
+#################################################################
+
+hpo:JointsDeChaux
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:JointDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeChaux
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+hpo:EnduitDeCimentOuResine
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Components allowed for Interieur > ElementAcces > ElementDeBaieInterieur > Bois
+#################################################################
+
+hpo:Fenetre
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Porte
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Volets
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:Persienne
+    hpo:componentAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+hpo:PanneauxPleins
+    hpo:componentAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Components allowed for Interieur > ElementNonStructurel > Cheminee > TerreCuite/Pierre/Metal
+#################################################################
+
+hpo:Atre a hpo:Component ;
+    rdfs:label "Âtre"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cheminee ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:ContreCoeur a hpo:Component ;
+    rdfs:label "Contre-cœur"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cheminee ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:PiedDroit a hpo:Component ;
+    rdfs:label "Pied-droit"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cheminee ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Couvrement a hpo:Component ;
+    rdfs:label "Couvrement"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cheminee ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Tablette a hpo:Component ;
+    rdfs:label "Tablette"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cheminee ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Ebrasement a hpo:Component ;
+    rdfs:label "Ébrasement"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cheminee ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Retrecissement a hpo:Component ;
+    rdfs:label "Rétrécissement"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cheminee ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Hotte a hpo:Component ;
+    rdfs:label "Hotte"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cheminee ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+hpo:Conduit
+    hpo:componentAllowedForElementFunction hpo:Cheminee ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Pierre ;
+    hpo:componentAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Components allowed for Interieur > ElementNonStructurel > Cloison > TerreCuite/Bois/Placo
+#################################################################
+
+hpo:Raidisseurs a hpo:Component ;
+    rdfs:label "Raidisseurs"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cloison ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Placo .
+
+hpo:Comblement a hpo:Component ;
+    rdfs:label "Comblement"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cloison ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Placo .
+
+hpo:Ensemble a hpo:Component ;
+    rdfs:label "Ensemble"@fr ;
+    hpo:componentAllowedForElementFunction hpo:Cloison ;
+    hpo:componentAllowedForMaterial hpo:TerreCuite ;
+    hpo:componentAllowedForMaterial hpo:Bois ;
+    hpo:componentAllowedForMaterial hpo:Placo .

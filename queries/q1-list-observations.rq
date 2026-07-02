@@ -1,0 +1,31 @@
+PREFIX hpo: <https://example.org/heritage-pathology-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?observation ?visibilityLabel ?categoryLabel ?functionLabel ?materialLabel ?componentLabel ?pathologyLabel ?causeLabel
+WHERE {
+  ?observation a hpo:Observation ;
+      hpo:hasVisibilityContext ?visibility ;
+      hpo:hasElementCategory ?category ;
+      hpo:hasElementFunction ?function ;
+      hpo:hasMaterial ?material ;
+      hpo:concernsComponent ?component ;
+      hpo:hasPathology ?pathology ;
+      hpo:hasCause ?cause .
+
+  ?visibility rdfs:label ?visibilityLabel .
+  ?category rdfs:label ?categoryLabel .
+  ?function rdfs:label ?functionLabel .
+  ?material rdfs:label ?materialLabel .
+  ?component rdfs:label ?componentLabel .
+  ?pathology rdfs:label ?pathologyLabel .
+  ?cause rdfs:label ?causeLabel .
+
+  FILTER(lang(?visibilityLabel) = "fr")
+  FILTER(lang(?categoryLabel) = "fr")
+  FILTER(lang(?functionLabel) = "fr")
+  FILTER(lang(?materialLabel) = "fr")
+  FILTER(lang(?componentLabel) = "fr")
+  FILTER(lang(?pathologyLabel) = "fr")
+  FILTER(lang(?causeLabel) = "fr")
+}
+ORDER BY ?observation

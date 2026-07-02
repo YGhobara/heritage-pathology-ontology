@@ -1,0 +1,1843 @@
+@prefix hpo: <https://example.org/heritage-pathology-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Pathologies allowed for Toiture > Charpente > ElementStructurelCharpente > Bois
+#################################################################
+
+hpo:AttaqueBiologique a hpo:Pathology ;
+    rdfs:label "Attaque biologique"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fleche a hpo:Pathology ;
+    rdfs:label "Flèche"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Casse a hpo:Pathology ;
+    rdfs:label "Cassé"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fendue a hpo:Pathology ;
+    rdfs:label "Fendue"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:DeteriorationDesMateriaux a hpo:Pathology ;
+    rdfs:label "Détérioration des matériaux"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Effondrement a hpo:Pathology ;
+    rdfs:label "Effondrement"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Deformation a hpo:Pathology ;
+    rdfs:label "Déformation"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Mouvements a hpo:Pathology ;
+    rdfs:label "Mouvements"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Pathologies allowed for Toiture > Charpente > ElementStructurelCharpente > Acier
+#################################################################
+
+hpo:Deformation
+    hpo:pathologyAllowedForMaterial hpo:Acier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Acier .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Acier .
+
+#################################################################
+# Pathologies allowed for Toiture > Charpente > ElementStructurelCharpente > Fer
+#################################################################
+
+hpo:Deformation
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Pathologies allowed for Toiture > Charpente > PieceDeFixationCharpente > Bois/Acier/Fer
+#################################################################
+
+hpo:VariationDeForme a hpo:Pathology ;
+    rdfs:label "Variation de forme"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:ApparitionDUnJeu a hpo:Pathology ;
+    rdfs:label "Apparition d'un jeu"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Pathologies allowed for Toiture > Charpente > ElementDeFixationCharpente > Bois/Acier/Fer
+#################################################################
+
+hpo:VariationDeForme
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:ApparitionDUnJeu
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCharpente ;
+    hpo:pathologyAllowedForMaterial hpo:Bois ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Pathologies allowed for Toiture > Couverture > ElementCouvrant > Acier/Fer/Plastique/Amiante
+#################################################################
+
+hpo:Percements a hpo:Pathology ;
+    rdfs:label "Percements"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique ;
+    hpo:pathologyAllowedForMaterial hpo:Amiante .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique ;
+    hpo:pathologyAllowedForMaterial hpo:Amiante .
+
+hpo:Fleche
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique ;
+    hpo:pathologyAllowedForMaterial hpo:Amiante .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique ;
+    hpo:pathologyAllowedForMaterial hpo:Amiante .
+
+#################################################################
+# Pathologies allowed for Toiture > Couverture > ElementCouvrant > Bois
+#################################################################
+
+hpo:AttaqueBiologique
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fleche
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Casse
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fondue a hpo:Pathology ;
+    rdfs:label "Fondue"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Pathologies allowed for Toiture > Couverture > ElementCouvrant > TerreCuite
+#################################################################
+
+hpo:Delitee a hpo:Pathology ;
+    rdfs:label "Délitée"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:Fondue
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:Casse
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:Poreuse a hpo:Pathology ;
+    rdfs:label "Poreuse"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:Manquante a hpo:Pathology ;
+    rdfs:label "Manquante"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:Deplacee a hpo:Pathology ;
+    rdfs:label "Déplacée"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementCouvrant ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+#################################################################
+# Pathologies allowed for Toiture > Couverture > ElementDeFixationCouverture > Acier/Fer
+#################################################################
+
+hpo:VariationDeForme
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:ApparitionDUnJeu
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:pathologyAllowedForMaterial hpo:Acier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Pathologies allowed for Toiture > Couverture > ElementDeFixationCouverture > Bois
+#################################################################
+
+hpo:MortierOuColleDeteriore a hpo:Pathology ;
+    rdfs:label "Mortier ou colle détérioré"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:LiteauxAttaqueBiologique a hpo:Pathology ;
+    rdfs:label "Liteaux : Attaque biologique"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:LiteauxFleche a hpo:Pathology ;
+    rdfs:label "Liteaux : Flèche"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:LiteauxCasse a hpo:Pathology ;
+    rdfs:label "Liteaux : Cassé"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationCouverture ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+
+#################################################################
+# Pathologies allowed for Toiture > Zinguerie > ElementDeFixationZinguerie
+# > Zinc/Cuivre/PVC/Plomb/Fonte/Metallique
+#################################################################
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Zinc ;
+    hpo:pathologyAllowedForMaterial hpo:Cuivre ;
+    hpo:pathologyAllowedForMaterial hpo:PVC ;
+    hpo:pathologyAllowedForMaterial hpo:Plomb ;
+    hpo:pathologyAllowedForMaterial hpo:Fonte ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+hpo:ApparitionDUnJeu
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Zinc ;
+    hpo:pathologyAllowedForMaterial hpo:Cuivre ;
+    hpo:pathologyAllowedForMaterial hpo:PVC ;
+    hpo:pathologyAllowedForMaterial hpo:Plomb ;
+    hpo:pathologyAllowedForMaterial hpo:Fonte ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+hpo:VariationDeForme
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeFixationZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Zinc ;
+    hpo:pathologyAllowedForMaterial hpo:Cuivre ;
+    hpo:pathologyAllowedForMaterial hpo:PVC ;
+    hpo:pathologyAllowedForMaterial hpo:Plomb ;
+    hpo:pathologyAllowedForMaterial hpo:Fonte ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Pathologies allowed for Toiture > Zinguerie > ElementDeProtectionZinguerie > Mortier
+#################################################################
+
+hpo:Inexistant a hpo:Pathology ;
+    rdfs:label "Inexistant"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Decollements a hpo:Pathology ;
+    rdfs:label "Décollements"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Fissures a hpo:Pathology ;
+    rdfs:label "Fissures"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Gonflement a hpo:Pathology ;
+    rdfs:label "Gonflement"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Pulverulence a hpo:Pathology ;
+    rdfs:label "Pulvérulence"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier a hpo:Pathology ;
+    rdfs:label "Altération des matériaux autre que le mortier"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeProtectionZinguerie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Pathologies allowed for Toiture > Autre > ElementMaconneToiture > Mortier
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:ElementMaconneToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Pathologies allowed for Toiture > Autre > ElementSerrurerieToiture > Metallique/Fibrociment
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:ElementSerrurerieToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique ;
+    hpo:pathologyAllowedForMaterial hpo:Fibrociment .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementSerrurerieToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique ;
+    hpo:pathologyAllowedForMaterial hpo:Fibrociment .
+
+hpo:SolinInexistantDeteriore a hpo:Pathology ;
+    rdfs:label "Solin inexistant/Détérioré"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:ElementSerrurerieToiture ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique ;
+    hpo:pathologyAllowedForMaterial hpo:Fibrociment .
+
+#################################################################
+# Pathologies allowed for Exterieur > Facade > ElementDeParement > Mortier
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeParement ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Pathologies allowed for Exterieur > Facade > ElementEnSaillie > Mortier
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:ElementEnSaillie ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Pathologies allowed for Exterieur > Facade > ElementDeBaieExterieur > Mortier
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieExterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Pathologies allowed for Exterieur > ElevationExterieure > Enclos > Pierre
+#################################################################
+
+hpo:Fissure a hpo:Pathology ;
+    rdfs:label "Fissure"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Desolidarisation a hpo:Pathology ;
+    rdfs:label "Désolidarisation"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:PerteDeMatiere a hpo:Pathology ;
+    rdfs:label "Perte de matière"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Depot a hpo:Pathology ;
+    rdfs:label "Dépôt"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:AlterationChromatique a hpo:Pathology ;
+    rdfs:label "Altération Chromatique"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:ColonisationBiologique a hpo:Pathology ;
+    rdfs:label "Colonisation biologique"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Fruit a hpo:Pathology ;
+    rdfs:label "Fruit"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Divers a hpo:Pathology ;
+    rdfs:label "Divers"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Pathologies allowed for Exterieur > ElevationExterieure > Enclos > Parpaing/Brique
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Deformation
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Desolidarisation
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:PerteDeMatiere
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Depot
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:AlterationChromatique
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Fruit
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Divers
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+
+#################################################################
+# Pathologies allowed for Exterieur > ElevationExterieure > Enclos > Mortier
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Pathologies allowed for Exterieur > ElevationExterieure > Enclos > Metal
+#################################################################
+
+hpo:VariationDeForme
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+hpo:ApparitionDUnJeu
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:Enclos ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Pathologies allowed for Exterieur > ElevationExterieure > Amenagements > Pierre/Parpaing/Brique
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Desolidarisation
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:PerteDeMatiere
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Depot
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:AlterationChromatique
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Fruit
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Divers
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+#################################################################
+# Pathologies allowed for Exterieur > ElevationExterieure > Amenagements > Metal/Plastique
+#################################################################
+
+hpo:VariationDeForme
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique .
+
+hpo:ApparitionDUnJeu
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique .
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique .
+
+#################################################################
+# Pathologies allowed for Exterieur > ElevationExterieure > Amenagements > Beton/Enrobe
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForMaterial hpo:Beton ;
+    hpo:pathologyAllowedForMaterial hpo:Enrobe .
+
+hpo:Desolidarisation
+    hpo:pathologyAllowedForMaterial hpo:Beton ;
+    hpo:pathologyAllowedForMaterial hpo:Enrobe .
+
+hpo:Depot
+    hpo:pathologyAllowedForMaterial hpo:Beton ;
+    hpo:pathologyAllowedForMaterial hpo:Enrobe .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForMaterial hpo:Beton ;
+    hpo:pathologyAllowedForMaterial hpo:Enrobe .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Beton ;
+    hpo:pathologyAllowedForMaterial hpo:Enrobe .
+
+#################################################################
+# Pathologies allowed for Exterieur > ElevationExterieure > Amenagements > Bois
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Casse
+    hpo:pathologyAllowedForElementFunction hpo:Amenagements ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Pathologies allowed for Sols > VRD > Reseaux > Fonte/TerreCuite/Amiante/Fer/Beton
+#################################################################
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:Reseaux ;
+    hpo:pathologyAllowedForMaterial hpo:Fonte ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Amiante ;
+    hpo:pathologyAllowedForMaterial hpo:Fer ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:Reseaux ;
+    hpo:pathologyAllowedForMaterial hpo:Fonte ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Amiante ;
+    hpo:pathologyAllowedForMaterial hpo:Fer ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:FissureCassure a hpo:Pathology ;
+    rdfs:label "Fissure/Cassure"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:Reseaux ;
+    hpo:pathologyAllowedForMaterial hpo:Fonte ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Amiante ;
+    hpo:pathologyAllowedForMaterial hpo:Fer ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+#################################################################
+# Pathologies allowed for Sols > VRD > Reseaux > Plastique
+#################################################################
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Plastique .
+
+hpo:Inexistant
+    hpo:pathologyAllowedForMaterial hpo:Plastique .
+
+hpo:FissureCassure
+    hpo:pathologyAllowedForMaterial hpo:Plastique .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:Reseaux ;
+    hpo:pathologyAllowedForMaterial hpo:Plastique .
+
+#################################################################
+# Pathologies allowed for Sols > VRD > SolsVRD > Terre
+#################################################################
+
+hpo:Affaissement a hpo:Pathology ;
+    rdfs:label "Affaissement"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsVRD ;
+    hpo:pathologyAllowedForMaterial hpo:Terre .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:SolsVRD ;
+    hpo:pathologyAllowedForMaterial hpo:Terre .
+
+hpo:Pollue a hpo:Pathology ;
+    rdfs:label "Pollué"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsVRD ;
+    hpo:pathologyAllowedForMaterial hpo:Terre .
+
+hpo:IndicateursPresenceEau a hpo:Pathology ;
+    rdfs:label "Indicateurs de présence d'eau"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsVRD ;
+    hpo:pathologyAllowedForMaterial hpo:Terre .
+
+#################################################################
+# Pathologies allowed for Sols > VRD > SolsVRD > Enrobe
+#################################################################
+
+hpo:Affaissement
+    hpo:pathologyAllowedForMaterial hpo:Enrobe .
+
+hpo:Fissures
+    hpo:pathologyAllowedForMaterial hpo:Enrobe .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:SolsVRD ;
+    hpo:pathologyAllowedForMaterial hpo:Enrobe .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:SolsVRD ;
+    hpo:pathologyAllowedForMaterial hpo:Enrobe .
+
+#################################################################
+# Pathologies allowed for Sols > VRD > SolsVRD > Gravillon
+#################################################################
+
+hpo:Affaissement
+    hpo:pathologyAllowedForMaterial hpo:Gravillon .
+
+hpo:Pollue
+    hpo:pathologyAllowedForMaterial hpo:Gravillon .
+
+#################################################################
+# Pathologies allowed for Sols > VRD > SolsVRD > VestigesArcheologiques
+#################################################################
+
+hpo:Affaissement
+    hpo:pathologyAllowedForMaterial hpo:VestigesArcheologiques .
+
+hpo:Pollue
+    hpo:pathologyAllowedForMaterial hpo:VestigesArcheologiques .
+
+hpo:IndicateursPresenceEau
+    hpo:pathologyAllowedForMaterial hpo:VestigesArcheologiques .
+
+
+#################################################################
+# Pathologies allowed for Sols > Structure > Fondation > Pierre
+#################################################################
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:Fondation ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:Fondation ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:FissureCassure
+    hpo:pathologyAllowedForElementFunction hpo:Fondation ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Pathologies allowed for Sols > Structure > Fondation > Roche
+#################################################################
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:Inexistant
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:FissureCassure
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:Fondation ;
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+#################################################################
+# Pathologies allowed for Sols > Structure > MurEnterre > Pierre
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Desolidarisation
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:PerteDeMatiere
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Affaissement
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:IncompatibiliteMateriauFonctionOuMilieu a hpo:Pathology ;
+    rdfs:label "Incompatibilité du matériau avec la fonction ou milieu"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:DegradationDesMortiers a hpo:Pathology ;
+    rdfs:label "Dégradation des mortiers"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Pathologies allowed for Sols > Structure > MurEnterre > Roche
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:Deformation
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:Desolidarisation
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:PerteDeMatiere
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:Depot
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:AlterationChromatique
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:Fruit
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:Devers a hpo:Pathology ;
+    rdfs:label "Dévers"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+hpo:TracesHumidite a hpo:Pathology ;
+    rdfs:label "Traces d'humidité"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:MurEnterre ;
+    hpo:pathologyAllowedForMaterial hpo:Roche .
+
+#################################################################
+# Pathologies allowed for Sols > Structure > MurEnterre > Beton
+#################################################################
+
+hpo:PerteDeMatiere
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:Depot
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:AlterationChromatique
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+
+#################################################################
+# Pathologies allowed for Interieur > ElementStructurel > Vertical > Pierre/Parpaing/Brique
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Desolidarisation
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:PerteDeMatiere
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Depot
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:AlterationChromatique
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Fruit
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Devers
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementStructurel > Vertical > Mortier
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:Vertical ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementStructurel > Horizontal > Pierre/Parpaing/Brique
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Desolidarisation
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:PerteDeMatiere
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Depot
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:AlterationChromatique
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Fruit
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:Devers
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Parpaing ;
+    hpo:pathologyAllowedForMaterial hpo:Brique .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementStructurel > Horizontal > Mortier
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementStructurel > Horizontal > Bois
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:AttaqueBiologique
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fleche
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Casse
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fendue
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Deformation
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Mouvements
+    hpo:pathologyAllowedForElementFunction hpo:Horizontal ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementAcces > Escalier > Pierre/Beton
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:Desolidarisation
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:PerteDeMatiere
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:Depot
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementAcces > Escalier > Bois
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:AttaqueBiologique
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fleche
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Casse
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fendue
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Deformation
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Mouvements
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementAcces > Escalier > Fer
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:VariationDeForme
+    hpo:pathologyAllowedForElementFunction hpo:Escalier ;
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Fer .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementAcces > SolsInterieurs > TerreCuite/Dallage/Carrelage
+#################################################################
+
+hpo:Delitee
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Dallage ;
+    hpo:pathologyAllowedForMaterial hpo:Carrelage .
+
+hpo:Fendue
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Dallage ;
+    hpo:pathologyAllowedForMaterial hpo:Carrelage .
+
+hpo:Poreuse
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Dallage ;
+    hpo:pathologyAllowedForMaterial hpo:Carrelage .
+
+hpo:DecolleManquante a hpo:Pathology ;
+    rdfs:label "Décollé/manquante"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Dallage ;
+    hpo:pathologyAllowedForMaterial hpo:Carrelage .
+
+hpo:Tache a hpo:Pathology ;
+    rdfs:label "Tâché"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Dallage ;
+    hpo:pathologyAllowedForMaterial hpo:Carrelage .
+
+hpo:Deformations a hpo:Pathology ;
+    rdfs:label "Déformations"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Dallage ;
+    hpo:pathologyAllowedForMaterial hpo:Carrelage .
+
+hpo:DeformationConvexe a hpo:Pathology ;
+    rdfs:label "Déformation convexe"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Dallage ;
+    hpo:pathologyAllowedForMaterial hpo:Carrelage .
+
+hpo:DeformationConcave a hpo:Pathology ;
+    rdfs:label "Déformation concave"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite ;
+    hpo:pathologyAllowedForMaterial hpo:Dallage ;
+    hpo:pathologyAllowedForMaterial hpo:Carrelage .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementAcces > SolsInterieurs > Lino
+#################################################################
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:Lino .
+
+hpo:DecolleManquant a hpo:Pathology ;
+    rdfs:label "Décollé/manquant"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:Lino .
+
+hpo:Tache
+    hpo:pathologyAllowedForMaterial hpo:Lino .
+
+hpo:DeformationConvexe
+    hpo:pathologyAllowedForMaterial hpo:Lino .
+
+hpo:DeformationConcave
+    hpo:pathologyAllowedForMaterial hpo:Lino .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementAcces > SolsInterieurs > Beton
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:Tache
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:DeformationConvexe
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:DeformationConcave
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForMaterial hpo:Beton .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementAcces > SolsInterieurs > Bois
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fissure
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Tache
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:DeformationConvexe
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:DeformationConcave
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:AttaqueBiologique
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieInexistant a hpo:Pathology ;
+    rdfs:label "Quincaillerie : Inexistant"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieVariationDeForme a hpo:Pathology ;
+    rdfs:label "Quincaillerie : Variation de forme"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieDeteriorationDesMateriaux a hpo:Pathology ;
+    rdfs:label "Quincaillerie : Détérioration des matériaux"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieApparitionDUnJeu a hpo:Pathology ;
+    rdfs:label "Quincaillerie : Apparition d'un jeu"@fr ;
+    hpo:pathologyAllowedForElementFunction hpo:SolsInterieurs ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+
+#################################################################
+# Pathologies allowed for Interieur > ElementAcces > ElementDeBaieInterieur > Mortier
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:pathologyAllowedForMaterial hpo:Mortier .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementNonStructurel > RevetementMural
+# > EnduitPlatre/PlatreCisele/Gypseries
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementNonStructurel > RevetementMural > Bois
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fissure
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Tache
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:AttaqueBiologique
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieInexistant
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieVariationDeForme
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieDeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieApparitionDUnJeu
+    hpo:pathologyAllowedForElementFunction hpo:RevetementMural ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementNonStructurel > RevetementMural > RagreagePlatre
+#################################################################
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:RagreagePlatre .
+
+hpo:Decollements
+    hpo:pathologyAllowedForMaterial hpo:RagreagePlatre .
+
+hpo:Fissures
+    hpo:pathologyAllowedForMaterial hpo:RagreagePlatre .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForMaterial hpo:RagreagePlatre .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForMaterial hpo:RagreagePlatre .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForMaterial hpo:RagreagePlatre .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForMaterial hpo:RagreagePlatre .
+
+
+#################################################################
+# Pathologies allowed for Interieur > ElementNonStructurel > Cheminee > TerreCuite
+#################################################################
+
+hpo:Delitee
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:Poreuse
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:DecolleManquante
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:Tache
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:Deformations
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:TerreCuite .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementNonStructurel > Cheminee > Pierre
+#################################################################
+
+hpo:Fissure
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Desolidarisation
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:PerteDeMatiere
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Depot
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:ColonisationBiologique
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForMaterial hpo:Pierre .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementNonStructurel > Cheminee > Metal
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+hpo:VariationDeForme
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:Cheminee ;
+    hpo:pathologyAllowedForMaterial hpo:Metallique .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementNonStructurel > RevetementPlafond
+# > EnduitPlatre/PlatreCisele/Gypseries
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:Decollements
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:Fissures
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:Gonflement
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:Pulverulence
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:AlterationDesMateriauxAutreQueLeMortier
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+hpo:TracesHumidite
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:EnduitPlatre ;
+    hpo:pathologyAllowedForMaterial hpo:PlatreCisele ;
+    hpo:pathologyAllowedForMaterial hpo:Gypseries .
+
+#################################################################
+# Pathologies allowed for Interieur > ElementNonStructurel > RevetementPlafond > Bois
+#################################################################
+
+hpo:Inexistant
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Fissure
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Tache
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Deformation
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:DeteriorationDesMateriaux
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:Effondrement
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:AttaqueBiologique
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieInexistant
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieVariationDeForme
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieDeteriorationDesMateriaux
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .
+
+hpo:QuincaillerieApparitionDUnJeu
+    hpo:pathologyAllowedForElementFunction hpo:RevetementPlafond ;
+    hpo:pathologyAllowedForMaterial hpo:Bois .

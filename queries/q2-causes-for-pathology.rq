@@ -1,0 +1,12 @@
+PREFIX hpo: <https://example.org/heritage-pathology-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?cause ?causeLabel
+WHERE {
+  ?cause a hpo:Cause ;
+      hpo:causeAllowedForPathology hpo:Desolidarisation ;
+      rdfs:label ?causeLabel .
+
+  FILTER(lang(?causeLabel) = "fr")
+}
+ORDER BY ?causeLabel

@@ -1,0 +1,541 @@
+@prefix hpo: <https://example.org/heritage-pathology-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+#################################################################
+# Materials #####################################################
+#################################################################
+
+#################################################################
+# Materials allowed for RevetementMural
+#################################################################
+
+hpo:EnduitPlatre a hpo:Material ;
+    rdfs:label "Enduit plâtre"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:Bois a hpo:Material ;
+    rdfs:label "Bois"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:PlatreCisele a hpo:Material ;
+    rdfs:label "Plâtre ciselé"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:Gypseries a hpo:Material ;
+    rdfs:label "Gypseries"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:DecorsPeint a hpo:Material ;
+    rdfs:label "Décors peint"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:RagreagePlatre a hpo:Material ;
+    rdfs:label "Ragréage plâtre"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:RagreageCiment a hpo:Material ;
+    rdfs:label "Ragréage ciment"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:RagreageChaux a hpo:Material ;
+    rdfs:label "Ragréage chaux"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:Tapisserie a hpo:Material ;
+    rdfs:label "Tapisserie"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:Peinture a hpo:Material ;
+    rdfs:label "Peinture"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+hpo:Badigeon a hpo:Material ;
+    rdfs:label "Badigeon"@fr ;
+    hpo:allowedForElementFunction hpo:RevetementMural .
+
+
+#################################################################
+# Materials allowed for Cheminee
+#################################################################
+
+hpo:TerreCuite a hpo:Material ;
+    rdfs:label "Terre cuite"@fr ;
+    hpo:allowedForElementFunction hpo:Cheminee .
+
+hpo:Pierre a hpo:Material ;
+    rdfs:label "Pierre"@fr ;
+    hpo:allowedForElementFunction hpo:Cheminee .
+
+#################################################################
+# Materials allowed for RevetementPlafond
+#################################################################
+
+hpo:EnduitPlatre
+    hpo:allowedForElementFunction hpo:RevetementPlafond .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:RevetementPlafond .
+
+hpo:PlatreCisele
+    hpo:allowedForElementFunction hpo:RevetementPlafond .
+
+hpo:Gypseries
+    hpo:allowedForElementFunction hpo:RevetementPlafond .
+
+hpo:DecorsPeint
+    hpo:allowedForElementFunction hpo:RevetementPlafond .
+
+hpo:Peinture
+    hpo:allowedForElementFunction hpo:RevetementPlafond .
+
+hpo:Badigeon
+    hpo:allowedForElementFunction hpo:RevetementPlafond .
+
+#################################################################
+# Materials allowed for Cloison
+#################################################################
+
+hpo:TerreCuite
+    hpo:allowedForElementFunction hpo:Cloison .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:Cloison .
+
+hpo:Placo a hpo:Material ;
+    rdfs:label "Placo"@fr ;
+    hpo:allowedForElementFunction hpo:Cloison .
+
+#################################################################
+# Materials allowed for Escalier
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:Escalier .
+
+hpo:Beton a hpo:Material ;
+    rdfs:label "Béton"@fr ;
+    hpo:allowedForElementFunction hpo:Escalier .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:Escalier .
+
+hpo:Fer a hpo:Material ;
+    rdfs:label "Fer"@fr ;
+    hpo:allowedForElementFunction hpo:Escalier .
+
+#################################################################
+# Materials allowed for SolsInterieurs
+#################################################################
+
+hpo:TerreCuite
+    hpo:allowedForElementFunction hpo:SolsInterieurs .
+
+hpo:Dallage a hpo:Material ;
+    rdfs:label "Dallage"@fr ;
+    hpo:allowedForElementFunction hpo:SolsInterieurs .
+
+hpo:Carrelage a hpo:Material ;
+    rdfs:label "Carrelage"@fr ;
+    hpo:allowedForElementFunction hpo:SolsInterieurs .
+
+hpo:Lino a hpo:Material ;
+    rdfs:label "Lino"@fr ;
+    hpo:allowedForElementFunction hpo:SolsInterieurs .
+
+hpo:Beton
+    hpo:allowedForElementFunction hpo:SolsInterieurs .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:SolsInterieurs .
+
+#################################################################
+# Materials allowed for ElementDeBaieInterieur
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:ElementDeBaieInterieur .
+
+hpo:Parpaing a hpo:Material ;
+    rdfs:label "Parpaing"@fr ;
+    hpo:allowedForElementFunction hpo:ElementDeBaieInterieur .
+
+hpo:Metallique
+    hpo:allowedForElementFunction hpo:ElementDeBaieInterieur .
+
+hpo:Mortier a hpo:Material ;
+    rdfs:label "Mortier"@fr ;
+    hpo:allowedForElementFunction hpo:ElementDeBaieInterieur .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:ElementDeBaieInterieur .
+
+#################################################################
+# Materials allowed for Vertical
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:Vertical .
+
+hpo:Parpaing
+    hpo:allowedForElementFunction hpo:Vertical .
+
+hpo:Brique a hpo:Material ;
+    rdfs:label "Brique"@fr ;
+    hpo:allowedForElementFunction hpo:Vertical .
+
+hpo:Mortier
+    hpo:allowedForElementFunction hpo:Vertical .
+
+#################################################################
+# Materials allowed for Horizontal
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:Horizontal .
+
+hpo:Parpaing
+    hpo:allowedForElementFunction hpo:Horizontal .
+
+hpo:Brique
+    hpo:allowedForElementFunction hpo:Horizontal .
+
+hpo:Mortier
+    hpo:allowedForElementFunction hpo:Horizontal .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:Horizontal .
+
+#################################################################
+# Materials allowed for ElementDeParement
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:ElementDeParement .
+
+hpo:Parpaing
+    hpo:allowedForElementFunction hpo:ElementDeParement .
+
+hpo:Mortier
+    hpo:allowedForElementFunction hpo:ElementDeParement .
+
+hpo:Metallique
+    hpo:allowedForElementFunction hpo:ElementDeParement .
+
+#################################################################
+# Materials allowed for ElementEnSaillie
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:ElementEnSaillie .
+
+hpo:Parpaing
+    hpo:allowedForElementFunction hpo:ElementEnSaillie .
+
+hpo:Metallique
+    hpo:allowedForElementFunction hpo:ElementEnSaillie .
+
+hpo:Mortier
+    hpo:allowedForElementFunction hpo:ElementEnSaillie .
+
+#################################################################
+# Materials allowed for ElementDeBaieExterieur
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:ElementDeBaieExterieur .
+
+hpo:Parpaing
+    hpo:allowedForElementFunction hpo:ElementDeBaieExterieur .
+
+hpo:Metallique
+    hpo:allowedForElementFunction hpo:ElementDeBaieExterieur .
+
+hpo:Mortier
+    hpo:allowedForElementFunction hpo:ElementDeBaieExterieur .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:ElementDeBaieExterieur .
+
+#################################################################
+# Materials allowed for Enclos
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:Enclos .
+
+hpo:Parpaing
+    hpo:allowedForElementFunction hpo:Enclos .
+
+hpo:Brique
+    hpo:allowedForElementFunction hpo:Enclos .
+
+hpo:Mortier
+    hpo:allowedForElementFunction hpo:Enclos .
+
+hpo:Metallique
+    hpo:allowedForElementFunction hpo:Enclos .
+
+#################################################################
+# Materials allowed for Amenagements
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:Amenagements .
+
+hpo:Parpaing
+    hpo:allowedForElementFunction hpo:Amenagements .
+
+hpo:Brique
+    hpo:allowedForElementFunction hpo:Amenagements .
+
+hpo:Metallique
+    hpo:allowedForElementFunction hpo:Amenagements .
+
+hpo:Plastique a hpo:Material ;
+    rdfs:label "Plastique"@fr ;
+    hpo:allowedForElementFunction hpo:Amenagements .
+
+hpo:Beton
+    hpo:allowedForElementFunction hpo:Amenagements .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:Amenagements .
+
+hpo:Enrobe a hpo:Material ;
+    rdfs:label "Enrobé"@fr ;
+    hpo:allowedForElementFunction hpo:Amenagements .
+
+#################################################################
+# Materials allowed for Reseaux
+#################################################################
+
+hpo:Fonte a hpo:Material ;
+    rdfs:label "Fonte"@fr ;
+    hpo:allowedForElementFunction hpo:Reseaux .
+
+hpo:Plastique
+    hpo:allowedForElementFunction hpo:Reseaux .
+
+hpo:TerreCuite
+    hpo:allowedForElementFunction hpo:Reseaux .
+
+hpo:Amiante a hpo:Material ;
+    rdfs:label "Amiante"@fr ;
+    hpo:allowedForElementFunction hpo:Reseaux .
+
+hpo:Fer
+    hpo:allowedForElementFunction hpo:Reseaux .
+
+hpo:Beton
+    hpo:allowedForElementFunction hpo:Reseaux .
+
+#################################################################
+# Materials allowed for SolsVRD
+#################################################################
+
+hpo:Terre a hpo:Material ;
+    rdfs:label "Terre"@fr ;
+    hpo:allowedForElementFunction hpo:SolsVRD .
+
+hpo:Enrobe
+    hpo:allowedForElementFunction hpo:SolsVRD .
+
+hpo:Gravillon a hpo:Material ;
+    rdfs:label "Gravillon"@fr ;
+    hpo:allowedForElementFunction hpo:SolsVRD .
+
+hpo:VestigesArcheologiques a hpo:Material ;
+    rdfs:label "Vestiges archéologiques"@fr ;
+    hpo:allowedForElementFunction hpo:SolsVRD .
+
+#################################################################
+# Materials allowed for Fondation
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:Fondation .
+
+hpo:Roche a hpo:Material ;
+    rdfs:label "Roche"@fr ;
+    hpo:allowedForElementFunction hpo:Fondation .
+
+
+#################################################################
+# Materials allowed for MurEnterre
+#################################################################
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:MurEnterre .
+
+hpo:Roche
+    hpo:allowedForElementFunction hpo:MurEnterre .
+
+hpo:Beton
+    hpo:allowedForElementFunction hpo:MurEnterre .
+
+#################################################################
+# Materials allowed for Charpente element functions
+#################################################################
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:allowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:allowedForElementFunction hpo:ElementDeFixationCharpente .
+
+hpo:Acier a hpo:Material ;
+    rdfs:label "Acier"@fr ;
+    hpo:allowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:allowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:allowedForElementFunction hpo:ElementDeFixationCharpente .
+
+hpo:Fer
+    hpo:allowedForElementFunction hpo:ElementStructurelCharpente ;
+    hpo:allowedForElementFunction hpo:PieceDeFixationCharpente ;
+    hpo:allowedForElementFunction hpo:ElementDeFixationCharpente .
+
+#################################################################
+# Materials allowed for ElementCouvrant
+#################################################################
+
+hpo:Acier
+    hpo:allowedForElementFunction hpo:ElementCouvrant .
+
+hpo:Fer
+    hpo:allowedForElementFunction hpo:ElementCouvrant .
+
+hpo:Plastique
+    hpo:allowedForElementFunction hpo:ElementCouvrant .
+
+hpo:Amiante
+    hpo:allowedForElementFunction hpo:ElementCouvrant .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:ElementCouvrant .
+
+hpo:TerreCuite
+    hpo:allowedForElementFunction hpo:ElementCouvrant .
+
+#################################################################
+# Materials allowed for ElementDeFixationCouverture
+#################################################################
+
+hpo:Acier
+    hpo:allowedForElementFunction hpo:ElementDeFixationCouverture .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:ElementDeFixationCouverture .
+
+hpo:Fer
+    hpo:allowedForElementFunction hpo:ElementDeFixationCouverture .
+
+#################################################################
+# Materials allowed for ElementEcoulement
+#################################################################
+
+hpo:Zinc a hpo:Material ;
+    rdfs:label "Zinc"@fr ;
+    hpo:allowedForElementFunction hpo:ElementEcoulement .
+
+hpo:Cuivre a hpo:Material ;
+    rdfs:label "Cuivre"@fr ;
+    hpo:allowedForElementFunction hpo:ElementEcoulement .
+
+hpo:PVC a hpo:Material ;
+    rdfs:label "PVC"@fr ;
+    hpo:allowedForElementFunction hpo:ElementEcoulement .
+
+hpo:Fonte
+    hpo:allowedForElementFunction hpo:ElementEcoulement .
+
+hpo:Metallique a hpo:Material ;
+    rdfs:label "Métallique"@fr ;
+    hpo:allowedForElementFunction hpo:ElementEcoulement .
+
+#################################################################
+# Materials allowed for ElementDeFixationZinguerie
+#################################################################
+
+hpo:Zinc
+    hpo:allowedForElementFunction hpo:ElementDeFixationZinguerie .
+
+hpo:Cuivre
+    hpo:allowedForElementFunction hpo:ElementDeFixationZinguerie .
+
+hpo:PVC
+    hpo:allowedForElementFunction hpo:ElementDeFixationZinguerie .
+
+hpo:Plomb a hpo:Material ;
+    rdfs:label "Plomb"@fr ;
+    hpo:allowedForElementFunction hpo:ElementDeFixationZinguerie .
+
+hpo:Fonte
+    hpo:allowedForElementFunction hpo:ElementDeFixationZinguerie .
+
+hpo:Metallique
+    hpo:allowedForElementFunction hpo:ElementDeFixationZinguerie .
+
+#################################################################
+# Materials allowed for ElementDeProtectionZinguerie
+#################################################################
+
+hpo:Zinc
+    hpo:allowedForElementFunction hpo:ElementDeProtectionZinguerie .
+
+hpo:Calendrite a hpo:Material ;
+    rdfs:label "Calendrite"@fr ;
+    hpo:allowedForElementFunction hpo:ElementDeProtectionZinguerie .
+
+hpo:Plomb
+    hpo:allowedForElementFunction hpo:ElementDeProtectionZinguerie .
+
+hpo:PVC
+    hpo:allowedForElementFunction hpo:ElementDeProtectionZinguerie .
+
+hpo:Mortier
+    hpo:allowedForElementFunction hpo:ElementDeProtectionZinguerie .
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:ElementDeProtectionZinguerie .
+
+hpo:TerreCuite
+    hpo:allowedForElementFunction hpo:ElementDeProtectionZinguerie .
+
+#################################################################
+# Materials allowed for ElementMaconneToiture
+#################################################################
+
+hpo:TerreCuite
+    hpo:allowedForElementFunction hpo:ElementMaconneToiture .
+
+hpo:Pierre
+    hpo:allowedForElementFunction hpo:ElementMaconneToiture .
+
+hpo:Mortier
+    hpo:allowedForElementFunction hpo:ElementMaconneToiture .
+
+
+#################################################################
+# Materials allowed for ElementMenuiserieToiture
+#################################################################
+
+hpo:Bois
+    hpo:allowedForElementFunction hpo:ElementMenuiserieToiture .
+
+hpo:Metallique
+    hpo:allowedForElementFunction hpo:ElementMenuiserieToiture .
+
+
+#################################################################
+# Materials allowed for ElementSerrurerieToiture
+#################################################################
+
+hpo:Metallique
+    hpo:allowedForElementFunction hpo:ElementSerrurerieToiture .
+
+hpo:Fibrociment a hpo:Material ;
+    rdfs:label "Fibrociment"@fr ;
+    hpo:allowedForElementFunction hpo:ElementSerrurerieToiture .

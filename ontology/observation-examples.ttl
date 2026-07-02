@@ -1,0 +1,54 @@
+@prefix hpo: <https://example.org/heritage-pathology-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Sample observations
+#################################################################
+
+hpo:ObservationExample001 a hpo:Observation ;
+    hpo:hasVisibilityContext hpo:Interieur ;
+    hpo:hasElementCategory hpo:ElementAcces ;
+    hpo:hasElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:hasMaterial hpo:Pierre ;
+    hpo:concernsComponent hpo:Porte ;
+    hpo:hasPathology hpo:Desolidarisation ;
+    hpo:hasCause hpo:OxydationElementsMetalliques ;
+    hpo:additionalNotes "Corrosion des gonds avec migration d'oxydes colorant la pierre."@fr ;
+    hpo:remediationText "Reprise des scellements et passivation."@fr ;
+    hpo:workCompletionDelayYears 5 ;
+    hpo:controlVisitDelayYears 2 ;
+    hpo:hasStructureClassification hpo:ClassificationFaible ;
+    hpo:hasUserClassification hpo:ClassificationFaible .
+
+hpo:ObservationExample002 a hpo:Observation ;
+    hpo:hasVisibilityContext hpo:Interieur ;
+    hpo:hasElementCategory hpo:ElementAcces ;
+    hpo:hasElementFunction hpo:ElementDeBaieInterieur ;
+    hpo:hasMaterial hpo:Bois ;
+    hpo:concernsComponent hpo:Porte ;
+    hpo:hasPathology hpo:Desolidarisation ;
+    hpo:hasCause hpo:Infiltration ;
+    hpo:additionalNotes "Point de pénétration d'eau."@fr ;
+    hpo:remediationText "Calfeutrements à revoir."@fr ;
+    hpo:workCompletionDelayYears 5 ;
+    hpo:controlVisitDelayYears 2 ;
+    hpo:hasStructureClassification hpo:ClassificationFaible ;
+    hpo:hasUserClassification hpo:ClassificationFaible .
+
+hpo:ObservationExample003 a hpo:Observation ;
+    hpo:hasVisibilityContext hpo:Interieur ;
+    hpo:hasElementCategory hpo:ElementStructurel ;
+    hpo:hasElementFunction hpo:Vertical ;
+    hpo:hasMaterial hpo:Mortier ;
+    hpo:concernsComponent hpo:EnduitDeCimentOuResine ;
+    hpo:hasPathology hpo:Pulverulence ;
+    hpo:hasCause hpo:MauvaiseMiseEnOeuvre ;
+    hpo:additionalNotes "Salpêtre en couches épaisses."@fr ;
+    hpo:remediationText "Purge des enduits intérieurs."@fr ;
+    hpo:workCompletionDelayYears 20 ;
+    hpo:controlVisitDelayYears 2 ;
+    hpo:hasStructureClassification hpo:ClassificationFaible ;
+    hpo:hasUserClassification hpo:ClassificationFaible .

@@ -1,0 +1,206 @@
+@prefix hpo: <https://example.org/heritage-pathology-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Visibility contexts
+#################################################################
+
+hpo:Interieur a hpo:VisibilityContext ;
+    rdfs:label "Intérieur"@fr .
+
+hpo:Exterieur a hpo:VisibilityContext ;
+    rdfs:label "Extérieur"@fr .
+
+hpo:Toiture a hpo:VisibilityContext ;
+    rdfs:label "Toiture"@fr .
+
+hpo:Sols a hpo:VisibilityContext ;
+    rdfs:label "Sols"@fr .
+
+#################################################################
+# Element categories
+#################################################################
+
+hpo:ElementNonStructurel a hpo:ElementCategory ;
+    rdfs:label "Élément non structurel"@fr ;
+    hpo:allowedInVisibilityContext hpo:Interieur .
+
+hpo:ElementAcces a hpo:ElementCategory ;
+    rdfs:label "Élément d'accès"@fr ;
+    hpo:allowedInVisibilityContext hpo:Interieur .
+
+hpo:ElementStructurel a hpo:ElementCategory ;
+    rdfs:label "Élément structurel"@fr ;
+    hpo:allowedInVisibilityContext hpo:Interieur .
+
+hpo:Facade a hpo:ElementCategory ;
+    rdfs:label "Façade"@fr ;
+    hpo:allowedInVisibilityContext hpo:Exterieur .
+
+hpo:ElevationExterieure a hpo:ElementCategory ;
+    rdfs:label "Élévation extérieure"@fr ;
+    hpo:allowedInVisibilityContext hpo:Exterieur .
+
+hpo:Charpente a hpo:ElementCategory ;
+    rdfs:label "Charpente"@fr ;
+    hpo:allowedInVisibilityContext hpo:Toiture .
+
+hpo:Couverture a hpo:ElementCategory ;
+    rdfs:label "Couverture"@fr ;
+    hpo:allowedInVisibilityContext hpo:Toiture .
+
+hpo:Zinguerie a hpo:ElementCategory ;
+    rdfs:label "Zinguerie"@fr ;
+    hpo:allowedInVisibilityContext hpo:Toiture .
+
+hpo:AutreElementToiture a hpo:ElementCategory ;
+    rdfs:label "Autre"@fr ;
+    hpo:allowedInVisibilityContext hpo:Toiture .
+
+hpo:VRD a hpo:ElementCategory ;
+    rdfs:label "VRD"@fr ;
+    rdfs:comment "Voirie et réseaux divers."@fr ;
+    hpo:allowedInVisibilityContext hpo:Sols .
+
+hpo:StructureSol a hpo:ElementCategory ;
+    rdfs:label "Structure"@fr ;
+    hpo:allowedInVisibilityContext hpo:Sols .
+
+#################################################################
+# Element functions / Utilité
+#################################################################
+
+hpo:RevetementMural a hpo:ElementFunction ;
+    rdfs:label "Revêtement mural"@fr ;
+    hpo:allowedForElementCategory hpo:ElementNonStructurel .
+
+hpo:Cheminee a hpo:ElementFunction ;
+    rdfs:label "Cheminée"@fr ;
+    hpo:allowedForElementCategory hpo:ElementNonStructurel .
+
+hpo:RevetementPlafond a hpo:ElementFunction ;
+    rdfs:label "Revêtement Plafond"@fr ;
+    hpo:allowedForElementCategory hpo:ElementNonStructurel .
+
+hpo:Cloison a hpo:ElementFunction ;
+    rdfs:label "Cloison"@fr ;
+    hpo:allowedForElementCategory hpo:ElementNonStructurel .
+
+hpo:Escalier a hpo:ElementFunction ;
+    rdfs:label "Escalier"@fr ;
+    hpo:allowedForElementCategory hpo:ElementAcces .
+
+hpo:SolsInterieurs a hpo:ElementFunction ;
+    rdfs:label "Sols"@fr ;
+    hpo:allowedForElementCategory hpo:ElementAcces .
+
+hpo:ElementDeBaieInterieur a hpo:ElementFunction ;
+    rdfs:label "Élément de baie"@fr ;
+    hpo:allowedForElementCategory hpo:ElementAcces .
+
+hpo:Vertical a hpo:ElementFunction ;
+    rdfs:label "Vertical"@fr ;
+    hpo:allowedForElementCategory hpo:ElementStructurel .
+
+hpo:Horizontal a hpo:ElementFunction ;
+    rdfs:label "Horizontal"@fr ;
+    hpo:allowedForElementCategory hpo:ElementStructurel .
+
+hpo:Enclos a hpo:ElementFunction ;
+    rdfs:label "Enclos"@fr ;
+    hpo:allowedForElementCategory hpo:ElevationExterieure .
+
+hpo:Amenagements a hpo:ElementFunction ;
+    rdfs:label "Aménagements"@fr ;
+    hpo:allowedForElementCategory hpo:ElevationExterieure .
+
+hpo:ElementDeParement a hpo:ElementFunction ;
+    rdfs:label "Élément de parement"@fr ;
+    hpo:allowedForElementCategory hpo:Facade .
+
+hpo:ElementEnSaillie a hpo:ElementFunction ;
+    rdfs:label "Élément en saillie"@fr ;
+    hpo:allowedForElementCategory hpo:Facade .
+
+hpo:ElementDeBaieExterieur a hpo:ElementFunction ;
+    rdfs:label "Élément de baie"@fr ;
+    hpo:allowedForElementCategory hpo:Facade .
+
+hpo:Reseaux a hpo:ElementFunction ;
+    rdfs:label "Réseaux"@fr ;
+    hpo:allowedForElementCategory hpo:VRD .
+
+hpo:SolsVRD a hpo:ElementFunction ;
+    rdfs:label "Sols"@fr ;
+    hpo:allowedForElementCategory hpo:VRD .
+
+hpo:MurEnterre a hpo:ElementFunction ;
+    rdfs:label "Mur enterré"@fr ;
+    hpo:allowedForElementCategory hpo:StructureSol .
+
+hpo:Fondation a hpo:ElementFunction ;
+    rdfs:label "Fondation"@fr ;
+    hpo:allowedForElementCategory hpo:StructureSol .
+
+hpo:ElementStructurelCharpente a hpo:ElementFunction ;
+    rdfs:label "Élément structurel"@fr ;
+    hpo:allowedForElementCategory hpo:Charpente .
+
+hpo:PieceDeFixationCharpente a hpo:ElementFunction ;
+    rdfs:label "Pièce de fixation"@fr ;
+    hpo:allowedForElementCategory hpo:Charpente .
+
+hpo:ElementDeFixationCharpente a hpo:ElementFunction ;
+    rdfs:label "Élément de fixation"@fr ;
+    hpo:allowedForElementCategory hpo:Charpente .
+
+hpo:ElementCouvrant a hpo:ElementFunction ;
+    rdfs:label "Élément couvrant"@fr ;
+    hpo:allowedForElementCategory hpo:Couverture .
+
+hpo:ElementDeFixationCouverture a hpo:ElementFunction ;
+    rdfs:label "Élément de fixation"@fr ;
+    hpo:allowedForElementCategory hpo:Couverture .
+
+hpo:ElementEcoulement a hpo:ElementFunction ;
+    rdfs:label "Élément d'écoulement"@fr ;
+    hpo:allowedForElementCategory hpo:Zinguerie .
+
+hpo:ElementDeFixationZinguerie a hpo:ElementFunction ;
+    rdfs:label "Élément de fixation"@fr ;
+    hpo:allowedForElementCategory hpo:Zinguerie .
+
+hpo:ElementDeProtectionZinguerie a hpo:ElementFunction ;
+    rdfs:label "Élément de protection"@fr ;
+    hpo:allowedForElementCategory hpo:Zinguerie .
+
+hpo:ElementMaconneToiture a hpo:ElementFunction ;
+    rdfs:label "Élément maçonné"@fr ;
+    hpo:allowedForElementCategory hpo:AutreElementToiture .
+
+hpo:ElementMenuiserieToiture a hpo:ElementFunction ;
+    rdfs:label "Élément de menuiserie"@fr ;
+    hpo:allowedForElementCategory hpo:AutreElementToiture .
+
+hpo:ElementSerrurerieToiture a hpo:ElementFunction ;
+    rdfs:label "Élément de serrurerie"@fr ;
+    hpo:allowedForElementCategory hpo:AutreElementToiture .
+
+#################################################################
+# Classification levels
+#################################################################
+
+hpo:ClassificationFaible a hpo:ClassificationLevel ;
+    rdfs:label "Faible"@fr .
+
+hpo:ClassificationModere a hpo:ClassificationLevel ;
+    rdfs:label "Modéré"@fr .
+
+hpo:ClassificationEleve a hpo:ClassificationLevel ;
+    rdfs:label "Élevé"@fr .
+
+hpo:ClassificationTresEleve a hpo:ClassificationLevel ;
+    rdfs:label "Très élevé"@fr .
